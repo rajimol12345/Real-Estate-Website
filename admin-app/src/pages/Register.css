@@ -1,0 +1,123 @@
+.register-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #2c3e50 0%, #1a1a1a 100%);
+    padding: 20px;
+}
+
+.register-card {
+    background: rgba(36, 36, 36, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.register-header h2 {
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+}
+
+.register-header h2 span {
+    color: #00aeef;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.register-header p {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 12px;
+    color: #eee;
+    margin-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control,
+.form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #00aeef;
+    box-shadow: 0 0 0 4px rgba(0, 174, 239, 0.15);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #666;
+}
+
+.form-select option {
+    background-color: #242424;
+    color: #fff;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00aeef 0%, #008ece 100%);
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #00c0ff 0%, #00aeef 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 174, 239, 0.4);
+}
+
+.register-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.register-footer a {
+    color: #00aeef;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.register-footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .register-card {
+        padding: 35px 20px;
+    }
+}

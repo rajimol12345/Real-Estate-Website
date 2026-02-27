@@ -1,0 +1,42 @@
+.agent-thumb-fid {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #eee;
+}
+
+.agent-name-fid {
+    font-weight: 600;
+    color: #333;
+}
+
+.agent-role-fid {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.social-links-list {
+    display: flex;
+    gap: 8px;
+    color: #666;
+}
+
+.social-icon-fid {
+    opacity: 0.7;
+}
+
+.agent-modal {
+    max-width: 800px;
+}
+
+.social-input-group .input-group-text {
+    padding: 0 10px;
+    background-color: #f8f9fa;
+    color: #00aeef;
+}
+
+.social-input-group .form-control {
+    font-size: 12px;
+}

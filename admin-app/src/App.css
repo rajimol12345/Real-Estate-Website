@@ -1,0 +1,8 @@
+/* Reset default Vite styles that cause centering and max-width */
+#root {
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+}

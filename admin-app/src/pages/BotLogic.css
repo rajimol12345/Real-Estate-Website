@@ -1,0 +1,135 @@
+/* BotLogic.css */
+
+.bot-logic-page {
+    padding-bottom: 40px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(237, 242, 247, 0.8);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.config-card .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-save {
+    background: #1a365d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.btn-save:hover:not(:disabled) {
+    background: #2a4365;
+    transform: translateY(-2px);
+}
+
+.btn-save:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+.form-control {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-control:focus {
+    border-color: #3182ce;
+}
+
+.help-text {
+    font-size: 11px;
+    color: #a0aec0;
+    margin-top: 5px;
+    display: block;
+}
+
+.color-picker-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7fafc;
+    padding: 12px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.color-picker {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-add {
+    background: #edf2f7;
+    border: none;
+    color: #3182ce;
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-label {
+    font-size: 12px;
+    color: #718096;
+}
+
+.btn-remove {
+    background: none;
+    border: none;
+    color: #e53e3e;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.btn-remove:hover {
+    opacity: 1;
+}
+
+.tip-box {
+    background: #fffaf0;
+    border: 1px solid #fbd38d;
+}
+
+.tip-box p {
+    font-size: 13px;
+    color: #744210;
+    margin: 0;
+    line-height: 1.6;
+}

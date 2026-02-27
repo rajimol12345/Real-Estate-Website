@@ -1,0 +1,56 @@
+.message-list-card {
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-items {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message-item {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+.message-item:hover {
+    background-color: #f8f9fa;
+}
+
+.message-item.active {
+    background-color: #f0f7ff;
+    border-left: 3px solid #00aeef;
+}
+
+.message-view-card {
+    height: calc(100vh - 200px);
+    background-color: #fff;
+}
+
+.msg-subject {
+    margin-bottom: 2px;
+}
+
+.message-text {
+    font-size: 15px;
+    color: #444;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

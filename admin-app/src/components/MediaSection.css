@@ -1,0 +1,62 @@
+.media-visuals-section {
+    padding: 10px 0;
+}
+
+.section-subtitle {
+    color: #2c3e50;
+    font-weight: 700;
+    border-left: 4px solid #1b9bff;
+    padding-left: 12px;
+    font-size: 1.1rem;
+}
+
+.floor-plan-item {
+    background-color: #fcfcfc;
+    transition: all 0.2s ease;
+}
+
+.floor-plan-item:hover {
+    background-color: #f8f9fa;
+    border-color: #dee2e6 !important;
+}
+
+.video-preview-wrap {
+    border: 1px solid #dee2e6;
+    background: #000;
+}
+
+.video-preview-wrap iframe {
+    display: block;
+}
+
+/* Custom form styling to match the professional look */
+.media-visuals-section .form-label {
+    color: #495057;
+    font-size: 0.95rem;
+}
+
+.media-visuals-section .input-group-text {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-color: #dce0e4;
+}
+
+.media-visuals-section .form-control {
+    border-color: #dce0e4;
+}
+
+.media-visuals-section .form-control:focus {
+    border-color: #1b9bff;
+    box-shadow: 0 0 0 0.2rem rgba(27, 155, 255, 0.1);
+}
+
+.media-visuals-section hr {
+    border-top: 1px solid #edf1f4;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .floor-plan-item .row>div {
+        margin-bottom: 1rem;
+    }
+}

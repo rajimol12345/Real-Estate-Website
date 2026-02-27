@@ -1,0 +1,442 @@
+[2026-02-25T11:20:23.059Z] GET /api/properties/1
+Error: Invalid Property ID format: 1
+Stack: Error: Invalid Property ID format: 1
+    at D:\Real Estate\server\controllers\propertyController.js:121:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-25T11:20:26.709Z] GET /api/properties/1
+Error: Invalid Property ID format: 1
+Stack: Error: Invalid Property ID format: 1
+    at D:\Real Estate\server\controllers\propertyController.js:121:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-25T11:20:26.720Z] GET /api/properties/1
+Error: Invalid Property ID format: 1
+Stack: Error: Invalid Property ID format: 1
+    at D:\Real Estate\server\controllers\propertyController.js:121:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-25T11:20:40.987Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:20:40.993Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:20:48.324Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:20:48.338Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:20:54.525Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:20:54.534Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:21:06.251Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-25T11:21:06.256Z] GET /api/blogs/undefined
+Error: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:03:51.084Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:03:51.159Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:03:57.596Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T07:03:57.613Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T07:03:59.669Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:03:59.679Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:04:04.689Z] GET /api/properties/1
+Error: Invalid Property ID format: 1
+Stack: Error: Invalid Property ID format: 1
+    at D:\Real Estate\server\controllers\propertyController.js:121:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-26T07:04:04.703Z] GET /api/properties/1
+Error: Invalid Property ID format: 1
+Stack: Error: Invalid Property ID format: 1
+    at D:\Real Estate\server\controllers\propertyController.js:121:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-26T07:04:39.250Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:04:39.256Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:04:42.400Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:04:42.416Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:34:31.359Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:34:31.421Z] GET /api/blogs/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "blogpost"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\blogController.js:54:18
+
+[2026-02-26T07:34:38.304Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T07:34:38.318Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T07:46:28.489Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T07:46:28.518Z] GET /api/agents/1
+Error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+Stack: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "Agent"
+    at SchemaObjectId.cast (D:\Real Estate\server\node_modules\mongoose\lib\schema\objectId.js:253:11)
+    at SchemaType.applySetters (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1280:12)
+    at SchemaType.castForQuery (D:\Real Estate\server\node_modules\mongoose\lib\schemaType.js:1706:17)
+    at cast (D:\Real Estate\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\Real Estate\server\node_modules\mongoose\lib\query.js:5088:12)
+    at Query._castConditions (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2376:10)
+    at model.Query._findOne (D:\Real Estate\server\node_modules\mongoose\lib\query.js:2716:8)
+    at model.Query.exec (D:\Real Estate\server\node_modules\mongoose\lib\query.js:4687:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\Real Estate\server\controllers\agentController.js:30:19
+
+[2026-02-26T09:19:17.566Z] GET /api/chat/test-debug
+Error: Not Found - /api/chat/test-debug
+Stack: Error: Not Found - /api/chat/test-debug
+    at D:\Real Estate\server\server.js:139:17
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+    at processParams (D:\Real Estate\server\node_modules\router\index.js:582:12)
+    at next (D:\Real Estate\server\node_modules\router\index.js:291:5)
+    at D:\Real Estate\server\node_modules\router\index.js:688:15
+    at next (D:\Real Estate\server\node_modules\router\index.js:276:14)
+    at router.handle (D:\Real Estate\server\node_modules\router\index.js:186:3)
+    at router (D:\Real Estate\server\node_modules\router\index.js:60:12)
+
+[2026-02-26T09:20:30.752Z] GET /api/chat/test-debug
+Error: Not Found - /api/chat/test-debug
+Stack: Error: Not Found - /api/chat/test-debug
+    at D:\Real Estate\server\server.js:139:17
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+    at processParams (D:\Real Estate\server\node_modules\router\index.js:582:12)
+    at next (D:\Real Estate\server\node_modules\router\index.js:291:5)
+    at D:\Real Estate\server\node_modules\router\index.js:688:15
+    at next (D:\Real Estate\server\node_modules\router\index.js:276:14)
+    at router.handle (D:\Real Estate\server\node_modules\router\index.js:186:3)
+    at router (D:\Real Estate\server\node_modules\router\index.js:60:12)
+
+[2026-02-26T09:35:38.434Z] POST /api/auth/login
+Error: Invalid credentials
+Stack: Error: Invalid credentials
+    at D:\Real Estate\server\controllers\authController.js:118:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-02-26T09:38:42.717Z] POST /api/payments/create-order
+Error: Not Found - /api/payments/create-order
+Stack: Error: Not Found - /api/payments/create-order
+    at D:\Real Estate\server\server.js:140:17
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+    at processParams (D:\Real Estate\server\node_modules\router\index.js:582:12)
+    at next (D:\Real Estate\server\node_modules\router\index.js:291:5)
+    at D:\Real Estate\server\server.js:85:3
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+
+[2026-02-26T09:39:43.273Z] GET /api/payments/ping
+Error: Not Found - /api/payments/ping
+Stack: Error: Not Found - /api/payments/ping
+    at D:\Real Estate\server\server.js:140:17
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+    at processParams (D:\Real Estate\server\node_modules\router\index.js:582:12)
+    at next (D:\Real Estate\server\node_modules\router\index.js:291:5)
+    at D:\Real Estate\server\server.js:85:3
+    at Layer.handleRequest (D:\Real Estate\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Real Estate\server\node_modules\router\index.js:342:13)
+    at D:\Real Estate\server\node_modules\router\index.js:297:9
+
+[2026-02-26T10:15:15.215Z] POST /api/communication/inquiry
+Error: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+Stack: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (D:\Real Estate\server\node_modules\body-parser\lib\types\json.js:72:19)
+    at D:\Real Estate\server\node_modules\body-parser\lib\read.js:162:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (D:\Real Estate\server\node_modules\raw-body\index.js:238:16)
+    at done (D:\Real Estate\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Real Estate\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+

@@ -1,0 +1,39 @@
+.search-box-fid {
+    position: relative;
+    width: 300px;
+}
+
+.search-box-fid .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.search-box-fid input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.search-box-fid input:focus {
+    border-color: #00aeef;
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.1);
+}
+
+.user-name-fid {
+    font-weight: 600;
+    color: #333;
+}
+
+.badge-fid {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

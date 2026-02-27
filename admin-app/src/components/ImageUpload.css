@@ -1,0 +1,124 @@
+.image-upload-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.upload-dropzone {
+    border: 2px dashed #dce0e4;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.upload-dropzone:hover {
+    border-color: #1b9bff;
+    background-color: #f0f7ff;
+}
+
+.upload-dropzone.dragging {
+    border-color: #1b9bff;
+    background-color: #e6f2ff;
+    border-style: solid;
+}
+
+.upload-dropzone.uploading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.upload-icon {
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.upload-dropzone:hover .upload-icon {
+    color: #1b9bff;
+}
+
+/* Previews */
+.upload-previews.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+.upload-previews.single-view {
+    display: block;
+}
+
+.upload-previews.single-view .preview-item {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 16/10;
+}
+
+.preview-item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    aspect-ratio: 1;
+}
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.preview-remove-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.preview-remove-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+
+/* PDF Preview Box */
+.pdf-preview-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+    background: #f8f9fa;
+}
+
+.pdf-icon {
+    background: #e74c3c;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.pdf-name {
+    font-size: 11px;
+    color: #495057;
+    max-width: 100%;
+    text-align: center;
+}

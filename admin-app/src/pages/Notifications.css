@@ -1,0 +1,157 @@
+.notifications-page {
+    padding: 20px;
+}
+
+.notifications-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-card {
+    display: flex;
+    padding: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 20px;
+    transition: all 0.2s;
+}
+
+.notification-card:hover {
+    background: #fafafa;
+}
+
+.notification-card.unread {
+    background: #f0f9ff;
+    border-left: 4px solid #00aeef;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.type-icon.lead { color: #8bb812; background: #f4f9e8; }
+.type-icon.contact { color: #1b9bff; background: #e8f5ff; }
+.type-icon.property { color: #f3ca28; background: #fffcf0; }
+.type-icon.system { color: #727272; background: #f2f2f2; }
+
+.card-content {
+    flex: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #999;
+}
+
+.card-msg {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card-link {
+    font-size: 14px;
+    color: #00aeef;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.card-actions button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    border: none;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card-actions button:hover {
+    background: #eee;
+    color: #00aeef;
+}
+
+.card-actions .delete-btn:hover {
+    background: #fff5f5;
+    color: #e74c3c;
+}
+
+.empty-state {
+    padding: 100px 20px;
+    text-align: center;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading-state {
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.btn-secondary-fid {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary-fid:hover {
+    background: #eee;
+    border-color: #ccc;
+}
