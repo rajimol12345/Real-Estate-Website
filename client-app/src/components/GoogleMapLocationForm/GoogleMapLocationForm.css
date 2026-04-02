@@ -1,0 +1,122 @@
+.google-map-location-form {
+    padding: 20px;
+    /* Internal padding for the form content */
+}
+
+.google-map-location-form .card-title {
+    margin: 0 0 20px 0;
+    /* Space below title */
+    font-size: 20px;
+    color: #333;
+}
+
+.google-map-location-form .card-title span {
+    color: #00aeef;
+}
+
+.google-map-location-form .form-group {
+    margin-bottom: 20px;
+    /* Consistent margin-bottom */
+}
+
+.google-map-location-form .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    display: block;
+}
+
+.google-map-location-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    /* Light border */
+    padding: 12px 14px;
+    /* Proper padding */
+    font-size: 14px;
+    color: #333;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.google-map-location-form .form-control:focus {
+    border-color: #2ea3f2;
+    /* Focus border-color */
+    box-shadow: none;
+}
+
+.map-placeholder {
+    background-color: #e0e0e0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Consistent margin-bottom */
+}
+
+/* Form actions for buttons */
+.google-map-location-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* Space above buttons */
+}
+
+.google-map-location-form .prev-btn {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.google-map-location-form .prev-btn:hover {
+    background-color: #b0b0b0;
+}
+
+.google-map-location-form .next-btn {
+    background-color: #8cc63f;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.google-map-location-form .next-btn:hover {
+    background-color: #7ab82f;
+}
+
+/* Responsive grid for form-row-2 */
+.form-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-row-2>div {
+    margin-bottom: 20px;
+    /* Apply margin-bottom to columns directly */
+}
+
+@media (max-width: 768px) {
+    .form-row-2 {
+        grid-template-columns: 1fr;
+    }
+}

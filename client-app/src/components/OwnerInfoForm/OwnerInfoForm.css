@@ -1,0 +1,80 @@
+.owner-info-form .card-header-fid {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.owner-info-form .card-header-fid h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.owner-info-form .card-header-fid h4 span {
+    color: #00aeef;
+}
+
+.owner-info-form .card-body {
+    padding: 20px;
+}
+
+.owner-info-form .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.owner-info-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    height: 45px;
+}
+
+.owner-info-form textarea.form-control {
+    height: auto;
+    min-height: 100px;
+}
+
+.owner-info-form .form-control:focus {
+    border-color: #00aeef;
+    box-shadow: 0 0 0 0.25rem rgba(0, 174, 239, 0.25);
+}
+
+.owner-info-form .next-btn,
+.owner-info-form .prev-btn {
+    background-color: #8dc63f;
+    /* Green color from reference */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 150px;
+    text-transform: uppercase;
+}
+
+.owner-info-form .prev-btn {
+    background-color: #ccc;
+}
+
+.owner-info-form .prev-btn:hover {
+    background-color: #b0b0b0;
+}
+
+.owner-info-form .next-btn:hover {
+    background-color: #72a333;
+    /* Darker green on hover */
+    color: #fff;
+}
+
+.owner-info-form .btn-submit-property:hover {
+    background-color: #72a333;
+    /* Darker green on hover */
+    color: #fff;
+}

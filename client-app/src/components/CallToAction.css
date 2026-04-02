@@ -1,0 +1,133 @@
+.cta-fidelity-section-blue {
+  background-color: var(--primary-color);
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cta-fidelity-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: clamp(180px, 20vw, 220px);
+  padding: clamp(20px, 4vw, 40px) 0;
+  gap: 30px;
+}
+
+.cta-house-image-box {
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin-bottom: -10px;
+}
+
+.cta-house-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-text-content-box {
+  flex: 1;
+  text-align: center;
+}
+
+.cta-main-title {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 4vw, 42px);
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.cta-main-title span {
+  font-size: 0.6em;
+  text-transform: lowercase;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+.cta-main-title strong {
+  font-weight: 700;
+}
+
+.cta-yellow-line {
+  width: min(180px, 30%);
+  height: 3px;
+  background-color: #f3ca28;
+  margin: 10px auto 15px;
+}
+
+.cta-sub-title {
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 3vw, 28px);
+  color: var(--white-color);
+  margin: 0;
+  font-weight: 400;
+}
+
+.cta-button-box {
+  width: auto;
+}
+
+.btn-cta-outline-fid {
+  display: inline-block;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-cta-outline-fid:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 992px) {
+  .cta-fidelity-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0 0;
+  }
+
+  .cta-house-image-box {
+    width: 60%;
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .cta-text-content-box {
+    width: 100%;
+    order: 1;
+  }
+
+  .cta-button-box {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-house-image-box {
+    width: 80%;
+  }
+  
+  .cta-main-title {
+    font-size: 28px;
+  }
+  
+  .cta-sub-title {
+    font-size: 20px;
+  }
+}

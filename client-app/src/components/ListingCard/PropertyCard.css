@@ -1,0 +1,178 @@
+.property-card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.property-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.property-image {
+  position: relative;
+}
+
+.property-image img {
+  width: 100%;
+  display: block;
+}
+
+.property-type-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.property-type-badge.sale {
+  background-color: #ff5e14;
+  /* Orange */
+}
+
+.property-type-badge.rent {
+  background-color: #1b9bff;
+  /* Primary Blue */
+}
+
+.property-price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(27, 155, 255, 0.8);
+  /* Primary Blue with opacity */
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.property-content {
+  padding: 20px;
+}
+
+.property-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.property-title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.property-title a:hover {
+  color: var(--primary-color);
+}
+
+.property-location {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.property-location i {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.property-specs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.property-specs span {
+  font-size: 13px;
+  color: #555;
+}
+
+.property-specs i {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.btn-details {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-details:hover {
+  background-color: #0056b3;
+  /* Darker primary */
+}
+
+.btn-details i {
+  margin-left: 5px;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-payment {
+  flex: 1;
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  /* Brand Blue */
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+}
+
+.btn-payment:hover:not(:disabled) {
+  background-color: #0095cc;
+  box-shadow: 0 4px 12px rgba(0, 174, 239, 0.3);
+}
+
+.btn-payment.booked {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.btn-payment:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.spinner-small {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

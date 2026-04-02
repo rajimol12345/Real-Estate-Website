@@ -1,0 +1,90 @@
+/* HeroSection.css */
+
+.hero-section {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  height: 450px; /* Default height */
+  background: url('../../assets/images/slider/1.jpg') no-repeat scroll center center / cover; /* Background image from reference */
+  position: relative; /* Needed for absolute positioning of captions */
+}
+
+.hero-section .captions {
+  position: absolute;
+  width: 100%;
+  bottom: 110px; /* From reference */
+}
+
+.hero-section .captions .container .inner-cap { /* Renamed from .row to .inner-cap to match our JSX */
+  line-height: 60px;
+  background: rgba(69, 81, 90, 0.8); /* Dark transparent background from reference */
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 120px; /* Adjusted to accommodate strong tag, original had no strong */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block; /* To wrap content, similar to original behavior */
+}
+
+/* Responsive adjustments from reference's responsive.css */
+@media (max-width: 1199px) {
+    .hero-section {
+      height: 450px;
+    }
+    .hero-section .captions {
+        bottom: 100px;
+    }
+    .hero-section .captions .container .inner-cap {
+        font-size: 16px;
+        padding-right: 100px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+      height: 400px;
+    }
+    .hero-section .captions {
+        bottom: 0; /* Changed to 0 on smaller screens */
+    }
+    .hero-section .captions .container .inner-cap {
+        padding-right: 0; /* Remove padding-right on smaller screens */
+        font-size: 14px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: auto; /* Allow height to adjust for mobile */
+    }
+    .hero-section .captions {
+        position: relative; /* Change to relative positioning for mobile */
+        bottom: 0;
+    }
+    .hero-section .captions .container {
+        padding: 0 15px;
+        background: rgba(69, 81, 90, 0.8);
+    }
+    .hero-section .captions .container .inner-cap {
+        line-height: 22px;
+        font-weight: 300;
+        font-size: 14px;
+        padding: 10px 0;
+        background: none;
+        display: block; /* Make it block level */
+        text-align: center; /* Center text */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 300px;
+    }
+    .hero-section .captions .container .inner-cap {
+        padding: 10px 10px; /* Smaller padding */
+        font-size: 12px;
+    }
+}

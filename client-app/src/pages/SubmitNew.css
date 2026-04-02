@@ -1,0 +1,220 @@
+/* SubmitNew.css */
+
+.submit-property-page {
+    padding: 0 0 60px 0;
+    background-color: #f7f7f7;
+}
+
+.submit-section {
+    padding: 60px 0;
+}
+
+.submit-form {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Section Subtitles */
+.section-subtitle {
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.section-subtitle span {
+    color: #00aeef;
+    /* Theme Blue */
+}
+
+/* Form Groups */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+textarea.form-control {
+    height: auto;
+    padding: 15px;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    border-color: #00aeef;
+    outline: none;
+}
+
+/* Grid Layouts */
+.form-row {
+    display: flex;
+    /* Fallback */
+    display: grid;
+    gap: 30px;
+}
+
+/* Property Info: 3 columns (Type, Status, Price) */
+/* The layout in SubmitNew.jsx uses .form-row with .col-md-4, but we want to enforce grid */
+.form-section:nth-child(1) .form-row {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Map Location: 2 columns (Lat, Long) */
+.form-section:nth-child(4) .form-row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Additional Details: 4 columns */
+.form-section:nth-child(5) .form-row {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Owner Info: 3 columns */
+.form-section:nth-child(6) .form-row {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Auto-remove bootstrap margins if conflicting */
+.form-group.col-md-4,
+.form-group.col-md-6,
+.form-group.col-md-3 {
+    width: auto;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* Photo Gallery Upload Box */
+.upload-box {
+    background-color: #e6f6fd;
+    /* Light blue bg from reference */
+    border: 2px dashed #bce8f1;
+    /* Slightly darker border */
+    border-radius: 4px;
+    padding: 50px 20px;
+    text-align: center;
+    color: #00aeef;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.upload-box:hover {
+    background-color: #d9f0fc;
+}
+
+.upload-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.upload-box p {
+    margin: 0;
+    font-size: 15px;
+    color: #00aeef;
+    font-weight: 500;
+}
+
+/* Amenities Grid */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    accent-color: #00aeef;
+}
+
+/* Submit Button */
+.action-row {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.btn-submit-property {
+    background-color: #8cc63f;
+    /* Green */
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-submit-property:hover {
+    background-color: #7ab82f;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+
+    .form-section:nth-child(1) .form-row,
+    .form-section:nth-child(5) .form-row,
+    .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .submit-form {
+        padding: 20px;
+    }
+
+    .form-row,
+    .form-section:nth-child(1) .form-row,
+    .form-section:nth-child(4) .form-row,
+    .form-section:nth-child(5) .form-row,
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+}

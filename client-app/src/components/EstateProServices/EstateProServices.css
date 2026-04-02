@@ -1,0 +1,124 @@
+/* EstateProServices.css */
+
+.estate-pro-services {
+    padding: 70px 0;
+    background-color: var(--white-color); /* Assuming this section has a white background */
+}
+
+.section_title {
+  color: #56616a; /* From reference style.css */
+  text-align: center;
+  margin: 0 0 15px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 24px; /* Default for h2 */
+}
+
+.section_title:after {
+  content: '';
+  width: 105px;
+  height: 2px;
+  background: #fffc00; /* Yellow from reference */
+  box-shadow: 2px 2px 5px #ccc; /* From reference */
+  display: block;
+  margin: 15px auto 40px; /* Adjusted bottom margin for spacing */
+}
+
+/* Original had col-sm-3 which is 25% width */
+.estate-pro-services .row > .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.service_block {
+  padding: 15px; /* Re-added as it's internal padding for the block content */
+}
+
+.service_block .inner {
+  background: #e9eced; /* From reference */
+  text-align: center;
+  border: 1px solid #e2e2e2; /* From reference */
+  transition: all 300ms ease-in-out 0s;
+  padding-bottom: 25px; /* Explicit padding for consistency */
+}
+
+.service_block .inner .block_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  color: #000; /* From reference */
+  line-height: 1;
+  padding-top: 25px;
+  text-transform: capitalize;
+  transition: all 300ms ease-in-out 0s;
+  margin: 0;
+}
+
+.service_block .inner .block_icon {
+  padding: 25px 0 35px;
+}
+
+.service_block .inner .block_icon i {
+  width: 85px;
+  height: 85px;
+  line-height: 83px;
+  font-size: 30px;
+  color: var(--primary-color);
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+  transition: all 300ms ease-in-out 0s;
+}
+
+.service_block .inner .read_more {
+  line-height: 55px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #000; /* From reference */
+  display: block;
+  border-top: 1px solid #e2e2e2; /* From reference */
+  text-decoration: none;
+}
+
+.service_block .inner:hover {
+  border-color: var(--primary-color);
+  background: #f1f2f3; /* From reference */
+}
+
+.service_block .inner:hover .block_title {
+  color: var(--primary-color);
+}
+
+.service_block .inner:hover .block_icon i {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.service_block .inner:hover .read_more {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 991px) {
+    .estate-pro-services .row > .col-sm-3 { /* Targeting col-sm-3 directly */
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .estate-pro-services .row > .col-sm-3 { /* Targeting col-sm-3 directly */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .service_block {
+        padding: 10px 0; /* Adjust padding for small screens */
+    }
+}

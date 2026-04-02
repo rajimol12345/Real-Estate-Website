@@ -1,0 +1,161 @@
+.sidebar {
+  padding-left: 30px;
+}
+
+.widget {
+  margin-bottom: 40px;
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Search Widget */
+.widget-search .search-form {
+  position: relative;
+}
+
+.widget-search .search-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+}
+
+.widget-search .search-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Categories & Archives Widget */
+.widget-categories ul,
+.widget-archives ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget-categories li,
+.widget-archives li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.widget-categories li:last-child,
+.widget-archives li:last-child {
+  border-bottom: none;
+}
+
+.widget-categories a,
+.widget-archives a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.widget-categories a:hover,
+.widget-archives a:hover {
+  color: var(--primary-color);
+}
+
+/* Recent Posts Widget */
+.widget-recent-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget-recent-posts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.widget-recent-posts li:last-child {
+  margin-bottom: 0;
+}
+
+.widget-recent-posts .post-thumbnail {
+  flex: 0 0 80px;
+  margin-right: 15px;
+}
+
+.widget-recent-posts .post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.widget-recent-posts .post-content h4 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.widget-recent-posts .post-content h4 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.widget-recent-posts .post-content h4 a:hover {
+  color: var(--primary-color);
+}
+
+.widget-recent-posts .post-content .post-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Tags Widget */
+.widget-tags .tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.widget-tags .tag-cloud a {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.widget-tags .tag-cloud a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}

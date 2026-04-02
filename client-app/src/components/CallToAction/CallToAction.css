@@ -1,0 +1,28 @@
+/* CallToAction.css */
+
+.cta_banner {
+  background: var(--primary-color); /* Using primary color from our variables */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.cta_banner h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+.cta_banner p {
+  margin-bottom: 20px;
+}
+.cta_banner .cta_btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: all 0.3s ease; /* Add transition for hover effect */
+}
+.cta_banner .cta_btn:hover {
+    background: rgba(255,255,255,0.1); /* Slight background on hover */
+}

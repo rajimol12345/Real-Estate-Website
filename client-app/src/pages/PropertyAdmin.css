@@ -1,0 +1,264 @@
+.property-admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.admin-header h2 {
+    font-size: 36px;
+    color: #333d46;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.admin-header h2 span {
+    color: #00aeef;
+}
+
+.admin-header p {
+    color: #777;
+    font-size: 16px;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 992px) {
+    .admin-grid {
+        grid-template-columns: 400px 1fr;
+    }
+}
+
+/* Form Styles */
+.admin-form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.admin-form-card h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #333d46;
+    border-bottom: 2px solid #00aeef;
+    display: inline-block;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group-fid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-fid label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.form-group-fid input,
+.form-group-fid select {
+    padding: 12px 15px;
+    border: 1px solid #e1e7eb;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group-fid input:focus,
+.form-group-fid select:focus {
+    border-color: #00aeef;
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.1);
+}
+
+.form-row-fid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-actions-fid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-admin-submit {
+    background-color: #00aeef;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn-admin-submit:hover {
+    background-color: #333d46;
+}
+
+.btn-admin-cancel {
+    background-color: #f1f3f4;
+    color: #555;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* List Styles */
+.admin-list-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.admin-list-card h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #333d46;
+}
+
+.admin-table-responsive {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 15px;
+    background: #f8f9fa;
+    color: #555;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.admin-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.admin-thumb {
+    width: 60px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.td-property {
+    display: flex;
+    align-items: center;
+}
+
+.property-info strong {
+    display: block;
+    font-size: 14px;
+    color: #333d46;
+}
+
+.property-info span {
+    font-size: 12px;
+    color: #999;
+}
+
+.td-price {
+    font-weight: 700;
+    color: #00aeef;
+    font-size: 15px;
+}
+
+.td-details {
+    font-size: 13px;
+    color: #666;
+}
+
+.badge-fid {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.badge-fid.sale {
+    background: #e93838;
+    color: #fff;
+}
+
+.badge-fid.rent {
+    background: #00aeef;
+    color: #fff;
+}
+
+.td-actions {
+    white-space: nowrap;
+}
+
+.btn-edit-fid,
+.btn-delete-fid {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.btn-edit-fid {
+    background: #eef7ff;
+    color: #00aeef;
+}
+
+.btn-edit-fid:hover {
+    background: #00aeef;
+    color: #fff;
+}
+
+.btn-delete-fid {
+    background: #fff1f1;
+    color: #e93838;
+}
+
+.btn-delete-fid:hover {
+    background: #e93838;
+    color: #fff;
+}

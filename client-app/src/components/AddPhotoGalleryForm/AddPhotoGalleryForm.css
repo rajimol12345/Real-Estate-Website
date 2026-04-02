@@ -1,0 +1,100 @@
+.add-photo-gallery-form {
+    padding: 20px;
+    /* Internal padding for the form content */
+}
+
+.add-photo-gallery-form .card-title {
+    margin: 0 0 20px 0;
+    /* Space below title */
+    font-size: 20px;
+    color: #333;
+}
+
+.add-photo-gallery-form .card-title span {
+    color: #00aeef;
+}
+
+.upload-box {
+    border: 2px dashed #00aeef;
+    border-radius: 8px;
+    padding: 0;
+    /* Remove padding here as it will be in the label */
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #f0faff;
+    color: #00aeef;
+}
+
+.upload-area-label {
+    padding: 40px 20px;
+}
+
+.upload-box:hover {
+    background-color: #e6f7ff;
+}
+
+.upload-box .upload-icon {
+    color: #00aeef;
+    margin-bottom: 15px;
+}
+
+.upload-box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.upload-box .upload-button {
+    background-color: #00aeef;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.upload-box .upload-button:hover {
+    background-color: #008cba;
+}
+
+/* Form actions for buttons */
+.add-photo-gallery-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* Space above buttons */
+}
+
+.add-photo-gallery-form .prev-btn {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.add-photo-gallery-form .prev-btn:hover {
+    background-color: #b0b0b0;
+}
+
+.add-photo-gallery-form .next-btn {
+    background-color: #8cc63f;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.add-photo-gallery-form .next-btn:hover {
+    background-color: #7ab82f;
+}

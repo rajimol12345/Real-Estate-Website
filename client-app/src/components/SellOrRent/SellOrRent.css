@@ -1,0 +1,70 @@
+.sell-or-rent-section {
+    background-image: linear-gradient(rgba(0, 174, 239, 0.85), rgba(0, 174, 239, 0.85)), url('../../assets/images/slider/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 0;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cta-text h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cta-text h2 span {
+    color: #e5cc00;
+    /* Yellow 'or' */
+    font-size: 24px;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.cta-text p {
+    font-size: 24px;
+    margin: 5px 0 0 0;
+    font-weight: 300;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-cta:hover {
+    background-color: #fff;
+    color: #00aeef;
+}
+
+@media (max-width: 768px) {
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-text h2 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-green: #25d366; /* WhatsApp green, used as primary color */
+    --dark-text: #333;
+    --light-text: #f8f9fa;
+    --white-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom Primary Green Button */
+.btn-primary-green {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-green:hover {
+    background-color: #1ea751; /* Slightly darker green */
+    border-color: #1ea751;
+    color: var(--white-color);
+}
+
+/* Header - Initial State */
+.estatepro-header {
+    background-color: transparent;
+    transition: all 0.3s ease;
+    z-index: 1030; /* Ensure header is above other content */
+}
+
+.estatepro-header .top-bar {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent */
+    color: var(--light-text);
+    transition: all 0.3s ease;
+}
+
+.estatepro-header .top-bar .contact-info i,
+.estatepro-header .top-bar .social-icons a {
+    color: var(--light-text);
+}
+
+.estatepro-header .main-navbar {
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.estatepro-header .navbar-brand .logo-estate {
+    color: var(--light-text);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.estatepro-header .navbar-brand .logo-pro {
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.estatepro-header .nav-link {
+    color: var(--light-text);
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.estatepro-header .nav-link:hover,
+.estatepro-header .nav-link.active {
+    color: var(--primary-green);
+}
+
+/* Header - Scrolled (Sticky) State */
+.estatepro-header.scrolled {
+    background-color: var(--white-color);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.estatepro-header.scrolled .top-bar {
+    display: none; /* Hide top bar on scroll */
+}
+
+.estatepro-header.scrolled .main-navbar {
+    background-color: var(--white-color);
+}
+
+.estatepro-header.scrolled .navbar-brand .logo-estate,
+.estatepro-header.scrolled .nav-link {
+    color: var(--dark-text);
+}
+
+.estatepro-header.scrolled .nav-link:hover,
+.estatepro-header.scrolled .nav-link.active {
+    color: var(--primary-green);
+}
+
+/* Dropdown Menu Styling */
+.navbar-nav .dropdown-menu {
+    border-top: 3px solid var(--primary-green);
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    display: block; /* For smooth transitions, initially invisible */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); /* Initial state for slide-down */
+    transition: all 0.3s ease-out;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar-nav .dropdown-item {
+    color: var(--dark-text);
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    text-transform: capitalize;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--primary-green);
+}
+
+.navbar-nav .dropdown-header {
+    color: var(--primary-green);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+/* Mega Menu specific styles */
+.navbar-nav .mega-menu {
+    width: 600px; /* Adjust width as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the mega menu */
+}
+
+@media (max-width: 991.98px) {
+    .estatepro-header .top-bar {
+        display: none; /* Hide top bar on mobile */
+    }
+    .estatepro-header .main-navbar {
+        background-color: var(--white-color); /* Always white on mobile */
+        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    }
+    .estatepro-header .navbar-brand .logo-estate,
+    .estatepro-header .nav-link {
+        color: var(--dark-text); /* Always dark text on mobile */
+    }
+    .navbar-nav .dropdown-menu {
+        transform: translateY(0); /* No slide effect on mobile */
+        opacity: 1;
+        visibility: visible;
+        display: none; /* Use JS for toggle on mobile */
+        position: static; /* Remove absolute positioning */
+        box-shadow: none;
+        border-top: none;
+        padding-left: 1rem;
+    }
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+    .navbar-nav .mega-menu {
+        width: auto;
+        left: auto;
+        transform: none;
+    }
+    .navbar-nav .dropdown-header {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,189 @@
+.listing-grid-card {
+  background: var(--white-color);
+  margin-bottom: 30px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  border: 1px solid var(--lighter-gray-border);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-grid-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
+}
+
+.image-container {
+  position: relative;
+  aspect-ratio: 16/11;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.listing-grid-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+/* Tag (For Sale / Rent) */
+.tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 14px;
+  color: var(--white-color);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 5;
+  border-radius: 4px;
+}
+
+.tag.sale {
+  background-color: var(--primary-color);
+}
+
+.tag.rent {
+  background-color: var(--sale-badge);
+}
+
+.listing-card-fav {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 5;
+}
+
+/* Price Tag */
+.price-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #e5cc00;
+  color: var(--white-color);
+  padding: 8px 15px;
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 700;
+  z-index: 5;
+}
+
+/* Details Icon */
+.details-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--navy-color);
+  width: clamp(40px, 5vw, 48px);
+  height: clamp(40px, 5vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  font-size: 18px;
+  z-index: 5;
+  transition: background 0.3s;
+}
+
+.listing-grid-card:hover .details-icon {
+  background-color: var(--primary-color);
+}
+
+/* Content Area */
+.content {
+  background-color: var(--white-color);
+  padding: clamp(15px, 2.5vw, 22px);
+  transition: all 0.4s ease;
+  color: var(--secondary-color);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h4 {
+  font-size: clamp(16px, 2.2vw, 19px);
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.address {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address i {
+  color: var(--primary-color);
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid var(--lighter-gray-border);
+  padding-top: 15px;
+  margin-top: auto;
+  font-size: 12px;
+  color: var(--text-color);
+  flex-wrap: wrap;
+}
+
+.stats span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stats i {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+.listing-grid-card:hover .content {
+  background-color: var(--white-color);
+}
+
+.listing-card-actions {
+  border-top: 1px solid var(--lighter-gray-border);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.btn-book-now {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-book-now:hover {
+  background-color: #0095cc;
+  transform: translateY(-2px);
+}
+
+.btn-book-now.booked {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+  transform: none;
+}

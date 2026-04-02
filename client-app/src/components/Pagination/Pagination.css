@@ -1,0 +1,43 @@
+/* Pagination.css */
+
+.pagination {
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  /* Use flex to align items */
+  justify-content: center;
+  /* Center pagination links */
+  list-style: none;
+  /* Remove default list style */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.pagination li {
+  background: none;
+  display: inline-block;
+}
+
+.pagination li a {
+  padding: 0 16px;
+  line-height: 40px;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 0;
+  color: #000;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pagination li+li {
+  margin-left: 7px;
+}
+
+.pagination li.active a,
+.pagination li a:hover {
+  /* Added hover state */
+  background: var(--primary-color);
+  color: #fff;
+}

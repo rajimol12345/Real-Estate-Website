@@ -1,0 +1,29 @@
+.listing-section {
+  padding: clamp(40px, 8vw, 80px) 0;
+  background-color: var(--bg-color);
+}
+
+.property-grid {
+  margin-top: clamp(20px, 4vw, 40px);
+}
+
+.property-grid [class*="col-"] {
+  margin-bottom: clamp(20px, 3vw, 30px);
+}
+
+.loading-state,
+.no-results {
+  text-align: center;
+  padding: clamp(50px, 10vw, 100px) 0;
+  font-size: 18px;
+  color: var(--text-color);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .property-grid [class*="col-"] {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

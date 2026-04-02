@@ -1,0 +1,354 @@
+.chatbot-luxury-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.chatbot-luxury-toggle {
+    width: 60px;
+    height: 60px;
+    background: #00aeef;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-luxury-toggle:hover {
+    transform: scale(1.1);
+}
+
+.chatbot-luxury-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 380px;
+    height: 600px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatbot-luxury-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 35px;
+    height: 35px;
+    background: #00aeef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.brand-info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.online-status {
+    font-size: 11px;
+    color: #4cd137;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.online-status::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #4cd137;
+    border-radius: 50%;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chatbot-luxury-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.msg-row {
+    display: flex;
+    max-width: 85%;
+}
+
+.msg-row.user {
+    align-self: flex-end;
+}
+
+.msg-row.bot {
+    align-self: flex-start;
+}
+
+.msg-content {
+    padding: 12px 16px;
+    border-radius: 12px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.user .msg-content {
+    background: #00aeef;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.bot .msg-content {
+    background: white;
+    color: #333;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.msg-time {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+
+/* Property Cards in Chat */
+.property-results-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.property-card-bot {
+    min-width: 220px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.property-card-bot img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.property-card-bot-content {
+    padding: 10px;
+}
+
+.property-card-bot-content h4 {
+    font-size: 13px;
+    margin: 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.property-card-bot-content p {
+    font-size: 11px;
+    color: #666;
+    margin: 0 0 8px;
+}
+
+.property-card-bot-price {
+    font-weight: 700;
+    color: #00aeef;
+    font-size: 13px;
+}
+
+.btn-book-sm {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Typing Animation */
+.typing-dot-animation {
+    display: flex;
+    gap: 4px;
+    padding: 5px;
+}
+
+.typing-dot-animation span {
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-dot-animation span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.typing-dot-animation span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+/* Actions Area */
+.chatbot-luxury-actions {
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #eee;
+}
+
+.input-field-luxury {
+    display: flex;
+    gap: 10px;
+    background: #f1f3f5;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+
+.input-field-luxury input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+.send-btn {
+    background: none;
+    border: none;
+    color: #00aeef;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-btn:disabled {
+    color: #ccc;
+}
+
+/* Booking Overlay */
+.booking-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.booking-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+}
+
+/* Quick Actions Chips */
+.quick-actions-container {
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+}
+
+.quick-action-chip {
+    background: #f0f7ff;
+    border: 1px solid #cce5ff;
+    color: #00aeef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.quick-action-chip:hover {
+    background: #00aeef;
+    color: white;
+    border-color: #00aeef;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@media (max-width: 480px) {
+    .chatbot-luxury-window {
+        width: calc(100vw - 40px);
+        right: 0;
+        bottom: 80px;
+    }
+
+    .chatbot-luxury-container {
+        right: 20px;
+        bottom: 20px;
+    }
+}

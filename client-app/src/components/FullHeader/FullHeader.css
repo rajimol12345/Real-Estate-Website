@@ -1,0 +1,282 @@
+/* FullHeader.css */
+
+/* Define CSS variables specific to this header */
+:root {
+    --primary-color: #1b9bff; /* Blue color from reference */
+    --dark-text: #333;
+    --light-text: #f8f9fa;
+    --white-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --text-color-primary: #859ab3; /* From reference style.css */
+    --border-color-light: #f0f0f0; /* From reference style.css */
+    --hover-bg-light: #f8f8f8; /* From reference style.css */
+    --dropdown-border-color: rgba(133, 154, 179, 0.3); /* From reference style.css */
+    --dropdown-submenu-shadow: rgba(0, 0, 0, 0.175); /* From reference style.css */
+}
+
+/* Base Styles */
+.estatepro-header a,
+.estatepro-header .btn,
+.estatepro-header button {
+  outline: none;
+  transition: all 300ms ease-in-out 0s;
+}
+.estatepro-header a:focus,
+.estatepro-header .btn:focus,
+.estatepro-header button:focus,
+.estatepro-header a:hover,
+.estatepro-header .btn:hover,
+.estatepro-header button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms ease-in-out 0s;
+}
+
+/* Header - Initial State (transparent, becomes white on scroll) */
+.estatepro-header {
+    background-color: transparent;
+    transition: all 0.3s ease;
+    z-index: 1030; /* Ensure header is above other content */
+    border-bottom: none; /* No border initially */
+}
+
+/* Top Bar */
+.estatepro-header .top-bar {
+    background: #fff; /* White background as per reference */
+    border-bottom: 1px solid var(--border-color-light); /* Light border */
+    color: var(--text-color-primary);
+    transition: all 0.3s ease;
+}
+
+.estatepro-header .top-bar a {
+    color: var(--text-color-primary);
+}
+
+.estatepro-header .top-bar a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.estatepro-header .top-bar .dropdown-toggle {
+    line-height: 28px; /* Adjusted line-height for alignment */
+    padding: 0 12px;
+    border-left: 1px solid var(--border-color-light);
+    color: var(--text-color-primary);
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif; /* Using Roboto as per reference */
+    font-size: 14px;
+}
+.estatepro-header .top-bar .dropdown-toggle i {
+  width: 30px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-right: 3px;
+  font-size: 15px;
+}
+
+.estatepro-header .top-bar .dropdown-menu {
+    z-index: 99999;
+    top: 40px; /* Position below top-bar */
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    border: 1px solid var(--dropdown-border-color);
+    position: absolute; /* Ensure it's positioned correctly */
+    right: 0; /* Align to the right */
+    box-shadow: none;
+}
+
+.estatepro-header .top-bar .dropdown-menu li {
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+.estatepro-header .top-bar .dropdown-menu li + li {
+  border-top: 1px solid var(--dropdown-border-color);
+}
+
+.estatepro-header .top-bar .dropdown-menu li a {
+    line-height: 40px;
+    padding: 0 15px;
+    color: var(--text-color-primary);
+    font-size: 14px;
+}
+.estatepro-header .top-bar .dropdown-menu li a:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* Main Navbar */
+.estatepro-header .main-navbar {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background: none #f7f7f9; /* Initial background when not scrolled */
+    padding: 0; /* Override Bootstrap padding */
+}
+
+.estatepro-header .navbar-brand {
+    display: block;
+    padding: 30px 0; /* From reference */
+    margin: 0;
+    height: auto;
+}
+
+.estatepro-header .nav-item {
+    padding: 50px 0 43px; /* From reference */
+    margin-left: -1px; /* From reference */
+}
+
+.estatepro-header .nav-link {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 0 17px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    color: var(--text-color-primary);
+    text-shadow: none;
+}
+.estatepro-header .nav-link:hover,
+.estatepro-header .nav-link:focus {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.estatepro-header .nav-item.active .nav-link {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: none;
+  box-shadow: none;
+}
+
+
+/* Dropdown Menu Styling (Main Navigation) */
+.navbar-nav .dropdown-menu {
+    border: 1px solid var(--primary-color); /* From reference, slightly transparent blue */
+    padding: 0;
+    border-radius: 0;
+    margin-top: 0; /* Ensure it sits directly below the nav item */
+}
+
+.navbar-nav .dropdown-menu li {
+    position: relative;
+    padding: 0;
+}
+.navbar-nav .dropdown-menu li a {
+    border: none;
+    color: var(--text-color-primary);
+    padding: 10px 20px; /* Adjusted padding for better click area */
+    font-size: 15px; /* From reference */
+    line-height: normal; /* Override Bootstrap's default */
+}
+.navbar-nav .dropdown-menu li a:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.navbar-nav .dropdown-menu li + li {
+  border-top: 1px solid var(--primary-color); /* Separator */
+}
+
+/* Nested Dropdowns (Submenus) */
+.navbar-nav .dropdown-menu li ul { /* This targets the nested <ul> */
+  list-style: none;
+  position: absolute;
+  background: var(--white-color);
+  top: -1px;
+  left: 100%; /* Position to the right of parent menu item */
+  padding: 0;
+  white-space: nowrap;
+  box-shadow: -6px 0px 12px var(--dropdown-submenu-shadow); /* From reference */
+  border: 1px solid var(--primary-color); /* From reference */
+  display: none; /* Hide by default, show on hover */
+}
+.navbar-nav .dropdown-menu li:hover > ul {
+  display: block; /* Show submenu on hover */
+}
+.navbar-nav .dropdown-menu li ul li a {
+  display: block;
+}
+
+
+/* Header - Scrolled (Sticky) State */
+.estatepro-header.scrolled {
+    background-color: var(--white-color);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    border-bottom: 1px solid var(--border-color-light); /* Add border on scroll */
+}
+
+.estatepro-header.scrolled .top-bar {
+    display: none; /* Hide top bar on scroll */
+}
+
+.estatepro-header.scrolled .main-navbar {
+    background-color: var(--white-color);
+}
+
+.estatepro-header.scrolled .nav-link {
+    color: var(--dark-text); /* Dark text for nav links when scrolled */
+}
+
+.estatepro-header.scrolled .nav-link:hover,
+.estatepro-header.scrolled .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Custom Primary Color Button */
+.btn-primary-green {
+    background-color: var(--primary-color);
+    border-color: transparent; /* No border for the button */
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-green:hover {
+    background-color: #45515a; /* Darker gray/blue from reference */
+    border-color: transparent; /* No border for the button on hover */
+    color: var(--white-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991.98px) {
+    .estatepro-header .top-bar {
+        display: none; /* Hide top bar on mobile */
+    }
+    .estatepro-header .main-navbar {
+        background-color: var(--white-color); /* Always white on mobile */
+        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    }
+    .estatepro-header .nav-link {
+        color: var(--dark-text); /* Always dark text on mobile */
+    }
+    .navbar-nav .dropdown-menu {
+        transform: translateY(0); /* No slide effect on mobile */
+        opacity: 1;
+        visibility: visible;
+        display: none; /* Use JS for toggle on mobile */
+        position: static; /* Remove absolute positioning */
+        box-shadow: none;
+        border-top: none;
+        padding-left: 1rem;
+    }
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+    .navbar-nav .dropdown-header {
+        padding-left: 0;
+    }
+    /* Specific styles for nested dropdowns on mobile */
+    .navbar-nav .dropdown-menu li ul {
+      position: static; /* Remove absolute positioning */
+      left: auto;
+      top: auto;
+      box-shadow: none;
+      border: none;
+      padding-left: 15px; /* Indent nested menu items */
+      display: block; /* Always visible on mobile if parent is open */
+    }
+}

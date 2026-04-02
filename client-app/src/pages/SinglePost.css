@@ -1,0 +1,410 @@
+/* ==============================
+   Single Post Page - Estate Pro
+   ============================== */
+
+.single-post-page-pro {
+  background: #f0f0f0;
+}
+
+.sp-section {
+  padding: 60px 0;
+}
+
+/* Article */
+.sp-article {
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.sp-post-image {
+  position: relative;
+}
+
+.sp-post-image img {
+  width: 100%;
+  display: block;
+}
+
+.sp-placeholder-image {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(135deg, #8ec439 0%, #5a9e2f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 60px;
+}
+
+.sp-post-badges {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.sp-badge-comments {
+  background: #00aeef;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sp-badge-comments i {
+  margin-right: 5px;
+}
+
+.sp-badge-date {
+  background: #0089c8;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sp-badge-date i {
+  margin-right: 5px;
+}
+
+.sp-post-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #333;
+  padding: 25px 30px 0;
+  margin: 0;
+}
+
+.sp-post-content {
+  padding: 20px 30px 30px;
+}
+
+.sp-post-content p {
+  color: #888;
+  line-height: 1.8;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Comments Section */
+.sp-comments-section {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sp-section-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.sp-comments-list {
+  border-top: 1px solid #eee;
+}
+
+.sp-comment-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sp-comment-avatar {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.sp-comment-body {
+  flex: 1;
+}
+
+.sp-comment-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.sp-comment-author {
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sp-comment-author:hover {
+  color: #00aeef;
+}
+
+.sp-comment-time {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.sp-comment-body p {
+  margin: 0;
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Leave a Comment */
+.sp-leave-comment {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sp-comment-form .sp-form-group {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+}
+
+.sp-input-icon {
+  width: 45px;
+  min-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-right: 1px solid #eee;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.sp-comment-form input {
+  flex: 1;
+  border: none;
+  padding: 12px 15px;
+  font-size: 13px;
+  outline: none;
+  color: #666;
+}
+
+.sp-comment-form input::placeholder,
+.sp-comment-form textarea::placeholder {
+  color: #ccc;
+}
+
+.sp-textarea-group {
+  height: 100%;
+}
+
+.sp-comment-form textarea {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  font-size: 13px;
+  outline: none;
+  color: #666;
+  resize: none;
+  height: 100%;
+  min-height: 160px;
+}
+
+.sp-btn-submit {
+  background: #00aeef;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.sp-btn-submit:hover {
+  background: #333;
+}
+
+/* Sidebar */
+.sp-sidebar {
+  padding-left: 10px;
+}
+
+.sp-widget {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.sp-widget-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Search */
+.sp-search-box {
+  display: flex;
+  border: 1px solid #eee;
+}
+
+.sp-search-box input {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 13px;
+  outline: none;
+  color: #666;
+}
+
+.sp-search-box input::placeholder {
+  color: #ccc;
+}
+
+.sp-search-box button {
+  background: #00aeef;
+  border: none;
+  color: #fff;
+  width: 40px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sp-search-box button:hover {
+  background: #333;
+}
+
+/* Tabbed Widget */
+.sp-tabs {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+}
+
+.sp-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.sp-tab.active {
+  color: #fff;
+  background: #00aeef;
+  border-bottom-color: #00aeef;
+}
+
+.sp-tab:hover:not(.active) {
+  color: #00aeef;
+}
+
+.sp-tab-content {
+  padding-top: 5px;
+}
+
+.sp-tab-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sp-tab-item:last-child {
+  border-bottom: none;
+}
+
+.sp-tab-thumb {
+  width: 60px;
+  height: 45px;
+  min-width: 60px;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 16px;
+}
+
+.sp-tab-info h6 {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Tag Cloud */
+.sp-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sp-tag {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sp-tag:hover {
+  border-color: #00aeef;
+  color: #00aeef;
+}
+
+/* Text Widget */
+.sp-text-widget {
+  border-left: 3px solid #00aeef;
+  padding-left: 15px;
+}
+
+.sp-text-widget p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sp-sidebar {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .sp-post-title {
+    font-size: 22px;
+    padding: 20px 15px 0;
+  }
+
+  .sp-post-content {
+    padding: 15px;
+  }
+
+  .sp-comments-section,
+  .sp-leave-comment {
+    padding: 20px;
+  }
+}

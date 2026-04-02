@@ -1,0 +1,111 @@
+.blog-post-card-fidelity {
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.blog-image-wrapper-fid {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.blog-image-wrapper-fid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-post-card-fidelity:hover .blog-image-wrapper-fid img {
+  transform: scale(1.1);
+}
+
+.blog-meta-fid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 10;
+}
+
+.meta-block {
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: capitalize;
+}
+
+.meta-block.comments-fid {
+  background-color: #00aeef;
+}
+
+.meta-block.date-fid {
+  background-color: #008be0;
+}
+
+.blog-content-fid {
+  padding: 25px 25px 30px 35px;
+  /* Extra padding on left for accent bar */
+  position: relative;
+}
+
+.blog-content-fid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #00aeef;
+}
+
+/* Alternate colors if needed by design context */
+.blog-grid-page-fidelity .col-md-4:nth-child(3n+2) .blog-content-fid::before {
+  background-color: #f3ca28;
+  /* Example yellow accent if patterns vary */
+}
+
+/* Image 2725 shows blue for all except middle maybe? Let's stick to blue for fidelity unless specified */
+
+.blog-title-fid {
+  margin-bottom: 15px;
+}
+
+.blog-title-fid a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #333d46;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.blog-title-fid a:hover {
+  color: #00aeef;
+}
+
+.blog-excerpt-fid {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.read-more-fid {
+  color: #00aeef;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.read-more-fid:hover {
+  color: #333d46;
+}

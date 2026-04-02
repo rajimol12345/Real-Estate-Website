@@ -1,0 +1,250 @@
+.my-account-page {
+    background-color: #f8f9fa;
+}
+
+.account-sidebar {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.user-info-card {
+    padding: 30px 20px;
+    background: #37424b;
+    color: #fff;
+}
+
+.user-avatar-large {
+    width: 80px;
+    height: 80px;
+    background: #00aeef;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.user-info-card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.user-info-card span {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.account-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-nav button {
+    text-align: left;
+    padding: 15px 25px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.account-nav button i {
+    margin-right: 12px;
+    width: 20px;
+    color: #00aeef;
+}
+
+.account-nav button:hover,
+.account-nav button.active {
+    background: #f0faff;
+    color: #00aeef;
+}
+
+.logout-link {
+    color: #e93838 !important;
+}
+
+.account-content-area {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    min-height: 500px;
+}
+
+.tab-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.tab-title span {
+    color: #00aeef;
+}
+
+.empty-msg {
+    color: #999;
+}
+
+.empty-msg i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+}
+
+/* Saved Searches List */
+.search-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.search-item-card:hover {
+    border-color: #00aeef;
+    box-shadow: 0 5px 15px rgba(0, 174, 239, 0.05);
+}
+
+.search-info h5 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.search-info p {
+    margin: 0 0 5px;
+    font-size: 13px;
+    color: #666;
+}
+
+.search-date {
+    font-size: 11px;
+    color: #aaa;
+}
+
+.btn-unfollow {
+    background: #fff1f1;
+    color: #e93838;
+    border: 1px solid #ffcccc;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-unfollow:hover {
+    background: #e93838;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.profile-edit-form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.profile-edit-form .form-control {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-edit-form .form-control:focus {
+    border-color: #00aeef;
+    box-shadow: 0 0 0 0.2rem rgba(0, 174, 239, 0.1);
+}
+
+.profile-edit-form .btn-primary {
+    background: #00aeef;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.profile-edit-form .btn-primary:hover {
+    background: #0096ce;
+}
+
+.profile-edit-form .btn-primary:disabled {
+    background: #ccc;
+}
+
+/* Booking Receipt Card */
+.booking-receipt-wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.booking-receipt-wrapper:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.booking-details-footer {
+    padding: 20px;
+    background: #4c5667;
+    color: #fff;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.receipt-row:last-child {
+    margin-bottom: 0;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paid-amount {
+    color: #8ec439;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

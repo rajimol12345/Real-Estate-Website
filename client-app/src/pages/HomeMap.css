@@ -1,0 +1,91 @@
+.hero-map-section {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.fullscreen-map {
+    height: 100%;
+}
+
+.map-search-overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.map-search-overlay .container {
+    pointer-events: auto;
+}
+
+.search-box-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.map-search-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+    min-width: 150px;
+    text-transform: uppercase;
+}
+
+.map-search-title span {
+    color: var(--primary-color);
+}
+
+.map-search-form-wrap {
+    flex-grow: 1;
+}
+
+/* Ensure CompactSearchBar inside map overlay fits well */
+.map-search-form-wrap .homepage_search_fidelity {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.map-search-form-wrap .search-title-sidebar {
+    display: none;
+}
+
+.map-search-form-wrap .fidelity-search-container {
+    box-shadow: none;
+    background: transparent;
+}
+
+.map-search-form-wrap .search-elements-row {
+    padding: 0;
+}
+
+.map-info-window {
+    padding: 5px;
+    max-width: 150px;
+}
+
+.map-info-window h5 {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+}
+
+@media (max-width: 991px) {
+    .search-box-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .map-search-title {
+        text-align: center;
+    }
+}

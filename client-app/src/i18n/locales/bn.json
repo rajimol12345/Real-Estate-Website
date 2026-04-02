@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "হোম",
+    "properties": "প্রপার্টিজ",
+    "agents": "এজেন্ট",
+    "blog": "ব্লগ",
+    "contact": "যোগাযোগ",
+    "dashboard": "ড্যাশবোর্ড",
+    "favorites": "পছন্দসই তালিকা",
+    "my_account": "আমার অ্যাকাউন্ট",
+    "logout": "লগআউট",
+    "gallery": "গ্যালারি",
+    "home_map": "হোম - ম্যাপ",
+    "submit_new": "নতুন জমা দিন",
+    "listing_grid": "লিস্টিং গ্রিড",
+    "listing_list": "লিস্টিং লিস্ট",
+    "listing_details": "লিস্টিং বিস্তারিত",
+    "blog_2col": "ব্লগ ২ কলাম",
+    "blog_3col": "ব্লগ ৩ কলাম",
+    "single_post": "একক পোস্ট",
+    "property_info": "প্রপার্টি তথ্য",
+    "add_photo_gallery": "ফটো গ্যালারি যোগ করুন",
+    "amenities": "সুযোগ-সুবিধা",
+    "google_map_location": "গুগল ম্যাপ লোকেশন",
+    "additional_details": "অতিরিক্ত বিবরণ",
+    "users": "ব্যবহারকারী",
+    "existing_user": "বিদ্যমান ব্যবহারকারী",
+    "owner_info": "মালিকের তথ্য"
+  },
+  "topbar": {
+    "login": "লগইন",
+    "register": "রেজিস্টার",
+    "currency": "কারেন্সি",
+    "language": "ভাষা",
+    "logout": "লগআউট"
+  },
+  "search": {
+    "find_house": "আপনার বাড়ি খুঁজুন",
+    "keyword": "কীওয়ার্ড",
+    "property_type": "প্রপার্টি ধরন",
+    "location": "অবস্থান",
+    "beds": "বেড",
+    "any": "যেকোনো",
+    "search_btn": "অনুসন্ধান করুন"
+  },
+  "listings": {
+    "recent_listing": "সাম্প্রতিক তালিকা",
+    "for_rent": "ভাড়ার জন্য",
+    "for_sale": "বিক্রয়ের জন্য",
+    "view_details": "বিস্তারিত দেখুন",
+    "no_properties": "কোন প্রপার্টি পাওয়া যায়নি"
+  },
+  "news": {
+    "title": "সাম্প্রতিক খবর",
+    "empty": "কোন নতুন আপডেট নেই।"
+  },
+  "common": {
+    "loading": "লোড হচ্ছে...",
+    "error": "ত্রুটি ঘটেছে",
+    "month": "মাস"
+  }
+}

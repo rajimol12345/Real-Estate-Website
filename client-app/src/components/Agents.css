@@ -1,0 +1,178 @@
+.agents-fidelity-section {
+    padding: 100px 0;
+    background-color: #fff;
+    /* White background to contrast with grey Recent Listing */
+}
+
+.agents-fidelity-section .section-title h2 {
+    font-family: var(--font-heading), 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #555c66;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.agents-fidelity-section .yellow-separator {
+    width: 60px;
+    height: 2px;
+    background-color: #f3ca28;
+    margin: 0 auto 40px;
+}
+
+.agents-fidelity-section .carousel-controls {
+    margin-bottom: 40px;
+}
+
+.agents-fidelity-section .carousel-btn {
+    background: #fff;
+    border: 1px solid #eee;
+    color: #1b9bff;
+    width: 44px;
+    height: 44px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.agents-fidelity-section .carousel-btn:hover {
+    background: #1b9bff;
+    color: #fff;
+    border-color: #1b9bff;
+}
+
+.agents-carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.agents-carousel-inner {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.carousel-item-box {
+    flex: 0 0 auto;
+    padding: 0 20px;
+}
+
+/* Agent Card High Fidelity */
+.agent-card-fidelity {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f2f2f2;
+}
+
+.agent-card-fidelity:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.agent-image-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.agent-image-container img {
+    flex-grow: 1;
+    max-width: calc(100% - 40px);
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.agent-social-bar {
+    width: 40px;
+    background-color: #1b9bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.agent-social-bar a {
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.agent-social-bar a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.agent-footer {
+    display: flex;
+    align-items: stretch;
+    height: 55px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.agent-name-box {
+    flex-grow: 1;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.agent-name-box h3 {
+    font-size: 16px;
+    color: #333d46;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.agent-phone-btn {
+    width: 40px;
+    height: 100%;
+    background-color: #333d46;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.agent-phone-btn:hover {
+    background-color: #1b9bff;
+}
+
+@media (max-width: 1200px) {
+    .carousel-item-box {
+        min-width: 33.33%;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-item-box {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel-item-box {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-item-box {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel-item-box {
+        min-width: 100%;
+    }
+}

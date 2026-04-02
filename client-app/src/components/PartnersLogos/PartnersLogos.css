@@ -1,0 +1,116 @@
+.partners-fidelity-section {
+  padding: 60px 0;
+  background-color: #e6e9ee;
+  border-top: none;
+}
+
+.partners-fidelity-section .section-title h2 {
+  font-family: var(--font-heading), 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #555c66;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.partners-fidelity-section .yellow-separator {
+  width: 60px;
+  height: 2px;
+  background-color: #f3ca28;
+  margin: 0 auto 30px;
+}
+
+.carousel-controls {
+  margin-bottom: 30px;
+}
+
+.btn-group-fid {
+  display: inline-flex;
+  border: 1px solid #d2d8df;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.partners-fidelity-section .carousel-btn {
+  background: transparent;
+  border: none;
+  color: #1b9bff;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-fidelity-section .carousel-btn:first-child {
+  border-right: 1px solid #d2d8df;
+}
+
+.partners-fidelity-section .carousel-btn:hover {
+  background: #fff;
+  color: #1b9bff;
+}
+
+.partners-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.partners-carousel-inner {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  align-items: center;
+}
+
+.partner-carousel-item {
+  padding: 0 8px;
+}
+
+.partner-logo-box-fidelity {
+  background: #eff1f3;
+  padding: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.partner-logo-box-fidelity:hover {
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.partner-logo-box-fidelity img {
+  max-width: 80%;
+  max-height: 80%;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+.partner-logo-box-fidelity:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .partner-logo-box-fidelity {
+    padding: 10px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-logo-box-fidelity {
+    height: 80px;
+  }
+}

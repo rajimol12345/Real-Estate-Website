@@ -1,0 +1,128 @@
+.services-fidelity-section {
+    padding: 100px 0;
+    background-color: #f1f3f4;
+}
+
+/* Header Styles */
+.services-fidelity-section .section-title h2 {
+    font-family: var(--font-heading), 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #555c66;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.services-fidelity-section .yellow-separator {
+    width: 60px;
+    height: 2px;
+    background-color: #f3ca28;
+    margin: 0 auto 40px;
+}
+
+/* Services Grid */
+.services-grid-fid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+/* Card Styling */
+.service-card-fidelity {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.service-card-top {
+    padding: 50px 30px 60px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-card-top h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #333d46;
+    font-weight: 700;
+    margin-bottom: 40px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.service-card-fidelity:hover .service-card-top h3 {
+    color: #00aeef;
+}
+
+/* Icon Circle */
+.service-icon-circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #c9ebf9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #00aeef;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.service-card-fidelity:hover .service-icon-circle {
+    background-color: #00aeef;
+    color: #fff;
+    border-color: #00aeef;
+}
+
+/* Card Footer */
+.service-card-footer {
+    background-color: #f9f9f9;
+    padding: 22px 0;
+    border-top: 1px solid #f2f2f2;
+    transition: all 0.3s ease;
+}
+
+/* HOVER STATE PER REFERENCE 885 */
+.service-card-fidelity:hover .service-card-footer {
+    background-color: #00aeef;
+    border-top-color: #00aeef;
+}
+
+.read-more-fid {
+    text-decoration: none !important;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: color 0.3s;
+}
+
+.service-card-fidelity:hover .read-more-fid {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .services-grid-fid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .services-grid-fid {
+        grid-template-columns: 1fr;
+    }
+}

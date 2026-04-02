@@ -1,0 +1,318 @@
+/* src/components/Header/TopHeader.css */
+
+.topHeader {
+  background: #fff;
+  border-bottom: 1px solid #ededed;
+}
+
+.topHeader .social_menu {
+  float: left;
+}
+
+.topHeader .social_menu ul {
+  margin: 0;
+  list-style: none;
+  /* Add this to remove default list styling */
+}
+
+.topHeader .social_menu ul li {
+  padding: 10px 12px;
+  border-left: 1px solid #f0f0f0;
+  float: left;
+}
+
+.topHeader .social_menu ul li:last-child {
+  border-right: 1px solid #f0f0f0;
+}
+
+.topHeader .social_menu ul li a {
+  padding: 0;
+  display: block;
+  line-height: 28px;
+  width: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 100%;
+  font-size: 15px;
+  color: #859ab3;
+  text-align: center;
+}
+
+.topHeader .social_menu ul li a:hover {
+  background: #1b9bff;
+  border-color: #1b9bff;
+  color: #fff;
+}
+
+.topHeader .top_menu {
+  float: right;
+}
+
+.topHeader .top_menu .list-inline {
+  float: right;
+  margin: 0;
+  list-style: none;
+  /* Add this to remove default list styling */
+}
+
+.topHeader .top_menu .list-inline li {
+  padding: 10px 12px;
+  border-left: 1px solid #f0f0f0;
+  float: left;
+  position: relative;
+}
+
+.topHeader .top_menu .list-inline li:hover {
+  background: #f8f8f8;
+}
+
+.topHeader .top_menu .list-inline li:last-child {
+  border-right: 1px solid #f0f0f0;
+}
+
+.topHeader .top_menu .list-inline li a {
+  display: block;
+  line-height: 28px;
+  padding: 0;
+  font-size: 14px;
+  color: #859ab3;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topHeader .top_menu .list-inline li a i {
+  width: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center;
+  color: #1b9bff;
+  margin-right: 3px;
+  font-size: 15px;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup {
+  display: block;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup button {
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 30px;
+  color: #859ab3;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  /* Add cursor pointer */
+}
+
+.topHeader .top_menu .list-inline li .filterGroup button span {
+  width: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center;
+  color: #1b9bff;
+  margin-right: 3px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul {
+  z-index: 99999;
+  top: 40px;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  border: 1px solid rgba(133, 154, 179, 0.3);
+  position: absolute;
+  right: -105px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  min-width: 130px;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup.open ul {
+  display: block;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li {
+  width: 100%;
+  border: none;
+  padding: 0;
+  float: none;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li+li {
+  border-top: 1px solid rgba(133, 154, 179, 0.3);
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li a {
+  line-height: 40px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li a span {
+  margin: 0;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li a span:after {
+  content: '-';
+  margin: 0 0 0 5px;
+}
+
+.topHeader .top_menu .list-inline li .filterGroup ul li a:hover {
+  background: #f5f9ff;
+  color: #1b9bff;
+}
+
+.topHeader .top_menu .list-inline li:last-child .filterGroup button span {
+  font-size: 13px;
+  text-transform: uppercase;
+  background: #1b9bff;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.topHeader .top_menu .list-inline li:last-child .filterGroup ul {
+  right: 0;
+}
+
+/* Language dropdown specific */
+.lang-dropdown {
+  min-width: 150px !important;
+}
+
+.lang-dropdown .active-lang a {
+  background: #f0f8ff;
+  color: #1b9bff !important;
+  font-weight: 600;
+}
+
+.lang-code-badge {
+  display: inline-block;
+  background: #1b9bff;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-right: 8px;
+  line-height: 20px !important;
+  width: auto !important;
+  border: none !important;
+}
+
+.lang-code-badge:after {
+  content: '' !important;
+  margin: 0 !important;
+}
+
+.lang-flag-code {
+  display: inline-block;
+  background: #1b9bff;
+  color: #fff;
+  font-size: 11px !important;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-right: 6px;
+  line-height: 20px;
+  width: auto !important;
+  border: none !important;
+}
+
+.lang-flag-code:after {
+  content: '' !important;
+  margin: 0 !important;
+}
+
+.lang-check-icon {
+  color: #1b9bff;
+  font-size: 12px;
+  margin-left: auto;
+  width: auto !important;
+  border: none !important;
+  background: none !important;
+}
+
+.lang-check-icon:after {
+  content: '' !important;
+}
+
+.lang-switcher-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+
+  .topHeader .social_menu,
+  .topHeader .top_menu {
+    width: 100%;
+    padding: 0;
+    float: none;
+    /* Remove float */
+  }
+
+  .topHeader .social_menu ul,
+  .topHeader .top_menu .list-inline {
+    text-align: center;
+    float: none;
+    /* Remove float */
+  }
+
+  .topHeader .social_menu ul li,
+  .topHeader .top_menu .list-inline li {
+    float: none;
+    /* Remove float */
+    display: inline-block;
+    /* Make them inline-block for centering */
+  }
+
+  .topHeader .top_menu .list-inline {
+    border-top: 1px solid #f0f0f0;
+  }
+}
+
+@media (max-width: 465px) {
+  .topHeader .social_menu ul li {
+    padding: 10px 5px;
+    border: none;
+  }
+
+  .topHeader .social_menu ul li:last-child {
+    border: none;
+  }
+
+  .topHeader .top_menu {
+    padding: 0 15px;
+  }
+
+  .topHeader .top_menu .list-inline li {
+    border: none;
+    float: left;
+    /* Re-add float for 50% width layout */
+    width: 50%;
+    text-align: left;
+  }
+
+  .topHeader .top_menu .list-inline li:last-child {
+    border: none;
+  }
+
+  .topHeader .top_menu .list-inline li a i {
+    margin-right: 0;
+  }
+}

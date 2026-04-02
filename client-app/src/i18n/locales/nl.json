@@ -1,0 +1,149 @@
+{
+    "nav": {
+        "home": "Startpagina",
+        "properties": "Eigendommen",
+        "submit_new": "Nieuw indienen",
+        "agents": "Agenten",
+        "agent_details": "Agentdetails",
+        "blog": "Blog",
+        "contact": "Contact",
+        "about": "Over ons",
+        "listing_grid": "Lijstvak",
+        "listing_list": "Lijstoverzicht",
+        "listing_details": "Lijstdetails",
+        "blog_2col": "Blog 2 kolommen",
+        "blog_3col": "Blog 3 kolommen",
+        "single_post": "Enkel bericht",
+        "property_info": "Eigendomsinfo",
+        "add_photo_gallery": "Fotogalerij toevoegen",
+        "amenities": "Voorzieningen",
+        "google_map_location": "Google Map Locatie",
+        "additional_details": "Extra details",
+        "users": "Gebruikers",
+        "existing_user": "Bestaande gebruiker",
+        "owner_info": "Eigenaarsinfo",
+        "home_map": "Startpagina - Kaart",
+        "favorites": "Favorieten",
+        "my_account": "Mijn account",
+        "logout": "Uitloggen",
+        "gallery": "Galerij"
+    },
+    "topbar": {
+        "login": "Inloggen",
+        "register": "Registreren",
+        "currency": "Valuta",
+        "language": "Taal",
+        "logout": "Uitloggen"
+    },
+    "languages": {
+        "en": "Engels",
+        "bn": "Bengaals",
+        "de": "Duits",
+        "nl": "Nederlands"
+    },
+    "hero": {
+        "find_your": "Vind uw",
+        "house": "Huis",
+        "property_type": "Eigendomstype",
+        "location": "Locatie",
+        "beds": "Slaapkamers",
+        "baths": "Badkamers",
+        "sqft": "Vierkante meter",
+        "min_price": "Minimale prijs",
+        "max_price": "Maximale prijs",
+        "any": "alle",
+        "search": "Zoeken",
+        "details": "Details"
+    },
+    "services": {
+        "title": "Estate Pro Diensten",
+        "property_management": "Vastgoedbeheer",
+        "market_analysis": "Marktanalyse",
+        "sale_services": "Verkoopdiensten",
+        "renting_services": "Verhuurdiensten",
+        "read_more": "+ Lees meer"
+    },
+    "listings": {
+        "recent_listing": "Recente advertenties",
+        "for_sale": "Te koop",
+        "for_rent": "Te huur",
+        "no_properties": "Geen eigendommen gevonden die overeenkomen met uw criteria.",
+        "view_details": "Details bekijken",
+        "beds": "Slaapkamers",
+        "baths": "Badkamers",
+        "sqft": "Vierkante meter"
+    },
+    "agents": {
+        "our_agents": "Onze agenten",
+        "view_profile": "Profiel bekijken",
+        "similar_listings": "Vergelijkbare advertenties",
+        "tags": "Tags",
+        "text_widget": "Tekstwidget"
+    },
+    "testimonials": {
+        "title": "Wat onze klanten zeggen",
+        "client1_name": "John Smith, CEO bij Evanto",
+        "client1_text": "Er zijn veel variaties van passages uit Lorem Ipsum beschikbaar, maar de meerderheid heeft in enige vorm een wijziging ondergaan.",
+        "client2_name": "Jane Doe, Manager bij Bedrijf",
+        "client2_text": "Het is een lang gevestigd feit dat een lezer zal worden afgeleid door de leesbare inhoud van een pagina bij het bekijken van de lay-out."
+    },
+    "cta": {
+        "title": "Verkoop of verhuur uw eigendom",
+        "subtitle": "Wij bieden de veiligste en snelste manier om uw eigendommen te vermelden.",
+        "button": "Neem nu contact op"
+    },
+    "sell_rent": {
+        "sell_or_rent": "Verkopen of verhuren",
+        "your_property": "Uw eigendom",
+        "click_here": "KLIK HIER"
+    },
+    "news": {
+        "title": "Laatste Nieuws",
+        "empty": "Geen nieuwsupdates beschikbaar."
+    },
+    "search": {
+        "find_house": "Vind uw huis",
+        "property_type": "Eigendomstype",
+        "location": "Locatie",
+        "beds": "Slaapkamers",
+        "baths": "Badkamers",
+        "sqft": "Vierkante meter",
+        "min_price": "Minimale prijs",
+        "max_price": "Maximale prijs",
+        "search_btn": "Zoeken",
+        "any": "alle",
+        "all_types": "Alle typen"
+    },
+    "contact": {
+        "title": "Neem contact op",
+        "name": "Uw naam",
+        "email": "Uw e-mail",
+        "phone": "Uw telefoonnummer",
+        "message": "Uw bericht",
+        "send": "Bericht sturen",
+        "address": "Adres",
+        "get_in_touch": "Neem contact op"
+    },
+    "footer": {
+        "recent_posts": "Recente berichten",
+        "opening_hours": "Openingstijden",
+        "make_call": "Bel ons",
+        "send_email": "Stuur een e-mail",
+        "rights": "Alle rechten voorbehouden",
+        "about_us": "Over ons"
+    },
+    "page_cover": {
+        "home": "Startpagina",
+        "listing": "Lijsting"
+    },
+    "pagination": {
+        "previous": "Vorige",
+        "next": "Volgende"
+    },
+    "common": {
+        "loading": "Laden...",
+        "no_results": "Geen resultaten gevonden.",
+        "view_all": "Alles bekijken",
+        "month": "mnd"
+    }
+}

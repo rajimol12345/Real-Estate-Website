@@ -1,0 +1,147 @@
+/* client-app/src/pages/SubmitProperty.css */
+
+.submit-wrapper {
+  background: #dbdfe1;
+  /* Reference background color */
+  padding: 80px 0;
+  /* Increased padding */
+}
+
+.submit-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* Subtle box-shadow */
+}
+
+.submit-title-section {
+  text-align: center;
+  margin-bottom: 40px;
+  /* Space below title section */
+}
+
+.submit-title-section .main-page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.submit-title-section .main-page-title-underline {
+  width: 60px;
+  height: 3px;
+  background: #00aeef;
+  /* Match blue theme */
+  margin: 0 auto;
+}
+
+.submit-content {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  /* For sticky sidebar positioning context */
+}
+
+.submit-sidebar {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 100px;
+  /* Adjust based on header height */
+  height: fit-content;
+  z-index: 10;
+  /* Left vertical step sidebar - Width: 30% */
+  max-width: 30%;
+  /* Ensure it doesn't grow beyond 30% */
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+}
+
+.submit-form {
+  flex: 1;
+}
+
+.form-section {
+  margin-bottom: 40px;
+  /* Space between each form block */
+  scroll-margin-top: 120px;
+  /* Offset for anchor scroll to account for sticky header top */
+}
+
+/* Global smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .submit-content {
+    flex-direction: column;
+    /* Stack vertically */
+    gap: 20px;
+    /* Adjust gap for stacked layout */
+  }
+
+  .submit-sidebar,
+  .submit-form {
+    flex: 0 0 100%;
+    /* Sidebar width: 100% */
+    max-width: 100%;
+    /* Form width: 100% */
+  }
+
+  .submit-container {
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+/* Base styles for PageCover - should remain untouched but is here for context of what is *not* changed */
+.page-cover {
+  position: relative;
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+}
+
+.page-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-cover .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-cover .breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #eee;
+}
+
+.page-cover .breadcrumb-item+.breadcrumb-item::before {
+  color: #eee;
+}
+
+.page-cover .breadcrumb-item a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.page-cover .breadcrumb-item.active {
+  color: #00aeef;
+}

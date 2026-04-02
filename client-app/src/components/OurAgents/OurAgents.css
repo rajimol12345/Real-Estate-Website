@@ -1,0 +1,150 @@
+.agents-section {
+  padding: clamp(50px, 8vw, 80px) 0;
+  background-color: var(--bg-color);
+}
+
+/* Agent Card */
+.agent-card {
+  padding: 15px;
+  height: 100%;
+}
+
+.agent-card-inner {
+  background: var(--white-color);
+  border: 1px solid var(--lighter-gray-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-card-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: var(--primary-color);
+}
+
+.agent-image-row {
+  position: relative;
+  aspect-ratio: 1/1.1;
+  overflow: hidden;
+}
+
+.agent-image-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.agent-card-inner:hover .agent-image-row img {
+  transform: scale(1.05);
+}
+
+.agent-social-overlay {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  background: var(--primary-color);
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  transition: right 0.3s ease;
+  z-index: 2;
+}
+
+.agent-card-inner:hover .agent-social-overlay {
+  right: 0;
+}
+
+.agent-social-overlay a {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.agent-social-overlay a:hover {
+  color: var(--navy-color);
+  transform: scale(1.2);
+}
+
+.agent-details-fid {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.agent-name-fid {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+
+.agent-name-fid a:hover {
+  color: var(--primary-color);
+}
+
+.agent-position-fid {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.agent-phone-fid {
+  background: var(--navy-color);
+  color: var(--white-color);
+  padding: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.agent-phone-fid i {
+  color: var(--primary-color);
+}
+
+/* Controls */
+.agents-carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.agent-carousel-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--lighter-gray-border);
+  background: var(--white-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.agent-carousel-btn:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 576px) {
+  .agent-card {
+    padding: 10px;
+  }
+}

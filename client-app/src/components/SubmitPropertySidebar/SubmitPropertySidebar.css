@@ -1,0 +1,110 @@
+.submit-property-sidebar {
+    background-color: #ffffff;
+    /* White background */
+    border: 1px solid #e5e5e5;
+    /* Light border */
+    border-radius: 5px;
+    /* Subtle border radius */
+    padding: 0;
+    /* Padding is handled by list items */
+}
+
+.submit-property-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submit-property-sidebar li {
+    padding: 0;
+    /* Remove padding from li, move to link */
+    border-bottom: 1px solid #e5e5e5;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.submit-property-sidebar li .step-link {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.submit-property-sidebar li:last-child {
+    border-bottom: none;
+}
+
+.submit-property-sidebar li:hover {
+    /* Hover */
+    background: #f8f9fa;
+}
+
+.submit-property-sidebar li .step-circle {
+    /* Circle indicator */
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #dcdcdc;
+    margin-right: 12px;
+    transition: all 0.2s;
+    position: relative;
+    /* For the inner dot */
+}
+
+/* Inner dot for all steps */
+.submit-property-sidebar li .step-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+/* Vertical line connecting circles */
+.submit-property-sidebar li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 26px;
+    /* Center under 14px circle which has 20px padding */
+    top: 32px;
+    /* Start below the circle */
+    width: 2px;
+    height: 100%;
+    /* Cover the distance to next li */
+    background-color: #e5e5e5;
+    z-index: 0;
+}
+
+.submit-property-sidebar li {
+    position: relative;
+    /* For the vertical line positioning */
+}
+
+.submit-property-sidebar li.active .step-link {
+    color: #00aeef;
+    font-weight: 500;
+}
+
+.submit-property-sidebar li.active .step-circle {
+    border-color: #00aeef;
+}
+
+.submit-property-sidebar li.active .step-circle::after {
+    background-color: #00aeef;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .submit-property-sidebar {
+        margin-bottom: 20px;
+        /* Space when stacked on mobile */
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "properties": "Immobilien",
+        "submit_new": "Neu einreichen",
+        "agents": "Agenten",
+        "agent_details": "Agentendetails",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "about": "Über uns",
+        "listing_grid": "Inserat-Raster",
+        "listing_list": "Inserat-Liste",
+        "listing_details": "Inserat-Details",
+        "blog_2col": "Blog 2 Spalten",
+        "blog_3col": "Blog 3 Spalten",
+        "single_post": "Einzelner Beitrag",
+        "property_info": "Immobilien-Info",
+        "add_photo_gallery": "Fotogalerie hinzufügen",
+        "amenities": "Ausstattung",
+        "google_map_location": "Google Map Standort",
+        "additional_details": "Zusätzliche Details",
+        "users": "Benutzer",
+        "existing_user": "Bestehender Benutzer",
+        "owner_info": "Eigentümer-Info",
+        "home_map": "Startseite - Karte",
+        "favorites": "Favoriten",
+        "my_account": "Mein Konto",
+        "logout": "Abmelden",
+        "gallery": "Galerie"
+    },
+    "topbar": {
+        "login": "Anmelden",
+        "register": "Registrieren",
+        "currency": "Währung",
+        "language": "Sprache",
+        "logout": "Abmelden"
+    },
+    "languages": {
+        "en": "Englisch",
+        "bn": "Bengalisch",
+        "de": "Deutsch",
+        "nl": "Niederländisch"
+    },
+    "hero": {
+        "find_your": "Finden Sie Ihr",
+        "house": "Haus",
+        "property_type": "Immobilientyp",
+        "location": "Standort",
+        "beds": "Schlafzimmer",
+        "baths": "Badezimmer",
+        "sqft": "Quadratmeter",
+        "min_price": "Mindestpreis",
+        "max_price": "Höchstpreis",
+        "any": "beliebig",
+        "search": "Suchen",
+        "details": "Details"
+    },
+    "services": {
+        "title": "Estate Pro Dienstleistungen",
+        "property_management": "Immobilienverwaltung",
+        "market_analysis": "Marktanalyse",
+        "sale_services": "Verkaufsdienstleistungen",
+        "renting_services": "Vermietungsdienstleistungen",
+        "read_more": "+ Mehr lesen"
+    },
+    "listings": {
+        "recent_listing": "Neueste Inserate",
+        "for_sale": "Zu verkaufen",
+        "for_rent": "Zu vermieten",
+        "no_properties": "Keine Immobilien entsprechen Ihren Kriterien.",
+        "view_details": "Details anzeigen",
+        "beds": "Schlafzimmer",
+        "baths": "Badezimmer",
+        "sqft": "Quadratmeter"
+    },
+    "agents": {
+        "our_agents": "Unsere Agenten",
+        "view_profile": "Profil anzeigen",
+        "similar_listings": "Ähnliche Inserate",
+        "tags": "Tags",
+        "text_widget": "Text-Widget"
+    },
+    "testimonials": {
+        "title": "Was unsere Kunden sagen",
+        "client1_name": "John Smith, CEO bei Evanto",
+        "client1_text": "Es gibt viele Variationen von Passagen aus Lorem Ipsum, aber die Mehrheit hat in irgendeiner Form eine Veränderung erfahren.",
+        "client2_name": "Jane Doe, Manager bei einem Unternehmen",
+        "client2_text": "Es ist eine seit langem bekannte Tatsache, dass ein Leser beim Betrachten des Layouts einer Seite durch den lesbaren Inhalt abgelenkt wird."
+    },
+    "cta": {
+        "title": "Verkaufen oder vermieten Sie Ihre Immobilie",
+        "subtitle": "Wir bieten den sichersten und schnellsten Weg, Ihre Immobilien zu inserieren.",
+        "button": "Kontaktieren Sie uns jetzt"
+    },
+    "sell_rent": {
+        "sell_or_rent": "Verkaufen oder Vermieten",
+        "your_property": "Ihre Immobilie",
+        "click_here": "HIER KLICKEN"
+    },
+    "news": {
+        "title": "Neueste Nachrichten",
+        "empty": "Keine Neuigkeiten verfügbar."
+    },
+    "search": {
+        "find_house": "Finden Sie Ihr Haus",
+        "property_type": "Immobilientyp",
+        "location": "Standort",
+        "beds": "Schlafzimmer",
+        "baths": "Badezimmer",
+        "sqft": "Quadratmeter",
+        "min_price": "Mindestpreis",
+        "max_price": "Höchstpreis",
+        "search_btn": "Suchen",
+        "any": "beliebig",
+        "all_types": "Alle Typen"
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "name": "Ihr Name",
+        "email": "Ihre E-Mail",
+        "phone": "Ihre Telefonnummer",
+        "message": "Ihre Nachricht",
+        "send": "Nachricht senden",
+        "address": "Adresse",
+        "get_in_touch": "Kontakt aufnehmen"
+    },
+    "footer": {
+        "recent_posts": "Neueste Beiträge",
+        "opening_hours": "Öffnungszeiten",
+        "make_call": "Anrufen",
+        "send_email": "E-Mail senden",
+        "rights": "Alle Rechte vorbehalten",
+        "about_us": "Über uns"
+    },
+    "page_cover": {
+        "home": "Startseite",
+        "listing": "Inserat"
+    },
+    "pagination": {
+        "previous": "Zurück",
+        "next": "Weiter"
+    },
+    "common": {
+        "loading": "Laden...",
+        "no_results": "Keine Ergebnisse gefunden.",
+        "view_all": "Alle anzeigen",
+        "month": "Mt"
+    }
+}

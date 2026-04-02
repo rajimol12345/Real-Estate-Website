@@ -1,0 +1,41 @@
+/* Global styles */
+
+/* Ensure Font Awesome icons render correctly */
+i[class^="fa"],
+i[class*=" fa"] {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Specific fix for brand icons */
+i.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+}
+
+/* Specific fix for solid icons */
+i.fas {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+}
+
+/* Specific fix for regular icons */
+i.far {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

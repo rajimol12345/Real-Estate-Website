@@ -1,0 +1,102 @@
+.properties-filter-horizontal {
+  display: flex;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.filter-label-box {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+  width: 20%;
+}
+
+.filter-label-box h3 {
+  color: #00aeef;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.filter-label-box h3 span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.filter-form-box {
+  background: #2196f3;
+  padding: 20px 30px;
+  width: 80%;
+  color: #fff;
+}
+
+.horizontal-filter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.horizontal-filter-form .form-group {
+  flex: 1;
+  min-width: 120px;
+  margin-bottom: 10px;
+}
+
+.horizontal-filter-form label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 400;
+}
+
+.horizontal-filter-form .form-control {
+  background: #fff;
+  border: none;
+  height: 35px;
+  border-radius: 0;
+  font-size: 13px;
+  color: #666;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.filter-button-row {
+  margin-top: 10px;
+}
+
+.btn-search-horizontal {
+  background: #2196f3;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-search-horizontal:hover {
+  background: #fff;
+  color: #2196f3;
+}
+
+@media (max-width: 992px) {
+  .properties-filter-horizontal {
+    flex-direction: column;
+  }
+
+  .filter-label-box,
+  .filter-form-box {
+    width: 100%;
+  }
+}

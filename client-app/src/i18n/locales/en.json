@@ -1,0 +1,151 @@
+{
+    "nav": {
+        "home": "Home",
+        "properties": "Properties",
+        "submit_new": "Submit New",
+        "agents": "Agents",
+        "agent_details": "Agent Details",
+        "blog": "Blog",
+        "contact": "Contact",
+        "about": "About",
+        "listing_grid": "Listing Grid",
+        "listing_list": "Listing List",
+        "listing_details": "Listing Details",
+        "blog_2col": "Blog 2 Column",
+        "blog_3col": "Blog 3 Column",
+        "single_post": "Single Post",
+        "property_info": "Property Info",
+        "add_photo_gallery": "Add Photo Gallery",
+        "amenities": "Amenities",
+        "google_map_location": "Google Map Location",
+        "additional_details": "Additional Details",
+        "users": "Users",
+        "existing_user": "Existing User",
+        "owner_info": "Owner Info",
+        "home_map": "Home - Map",
+        "favorites": "Favorites",
+        "my_account": "My Account",
+        "logout": "Logout",
+        "gallery": "Gallery"
+    },
+    "topbar": {
+        "login": "Login",
+        "register": "Register",
+        "currency": "Currency",
+        "language": "Language",
+        "logout": "Logout"
+    },
+    "languages": {
+        "en": "English",
+        "bn": "Bengali",
+        "de": "German",
+        "nl": "Dutch"
+    },
+    "hero": {
+        "find_your": "find your",
+        "house": "House",
+        "property_type": "Property type",
+        "location": "Location",
+        "beds": "Beds",
+        "baths": "Baths",
+        "sqft": "Sq ft",
+        "min_price": "min price",
+        "max_price": "max price",
+        "any": "any",
+        "search": "Search",
+        "details": "details"
+    },
+    "services": {
+        "title": "Estate Pro Services",
+        "property_management": "Property Management",
+        "market_analysis": "Market Analysis",
+        "sale_services": "Sale Services",
+        "renting_services": "Renting Services",
+        "read_more": "+ Read More"
+    },
+    "listings": {
+        "recent_listing": "Recent Listing",
+        "for_sale": "For Sale",
+        "for_rent": "For Rent",
+        "no_properties": "No properties matching your criteria.",
+        "view_details": "View Details",
+        "beds": "Beds",
+        "baths": "Baths",
+        "sqft": "Sq Ft"
+    },
+    "agents": {
+        "our_agents": "Our Agents",
+        "view_profile": "View Profile",
+        "similar_listings": "Similar Listings",
+        "tags": "Tags",
+        "text_widget": "Text Widget"
+    },
+    "testimonials": {
+        "title": "What Our Client Says",
+        "client1_name": "John Smith, CEO at Evanto",
+        "client1_text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "client2_name": "Jane Doe, Manager at Company",
+        "client2_text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-luck distribution of letters."
+    },
+    "cta": {
+        "title": "Sell or Rent your property",
+        "subtitle": "We provide the most secure and fastest way to list your assets.",
+        "button": "Contact Us Now"
+    },
+    "sell_rent": {
+        "sell": "Sell",
+        "or": "or",
+        "rent": "Rent",
+        "your_property": "Your Property",
+        "click_here": "CLICK HERE"
+    },
+    "news": {
+        "title": "Latest News",
+        "empty": "No news updates available."
+    },
+    "search": {
+        "find_house": "Find Your House",
+        "property_type": "Property type",
+        "location": "Location",
+        "beds": "Beds",
+        "baths": "Baths",
+        "sqft": "Sq ft",
+        "min_price": "min price",
+        "max_price": "max price",
+        "search_btn": "Search",
+        "any": "any",
+        "all_types": "All Types"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Your Name",
+        "email": "Your Email",
+        "phone": "Your Phone",
+        "message": "Your Message",
+        "send": "Send Message",
+        "address": "Address",
+        "get_in_touch": "Get In Touch"
+    },
+    "footer": {
+        "recent_posts": "Recent Posts",
+        "opening_hours": "Opening Hours",
+        "make_call": "Make a Call",
+        "send_email": "Send us an Email",
+        "rights": "All Rights Reserved",
+        "about_us": "About Us"
+    },
+    "page_cover": {
+        "home": "home",
+        "listing": "Listing"
+    },
+    "pagination": {
+        "previous": "Previous",
+        "next": "Next"
+    },
+    "common": {
+        "loading": "Loading...",
+        "no_results": "No results found.",
+        "view_all": "View All",
+        "month": "mo"
+    }
+}

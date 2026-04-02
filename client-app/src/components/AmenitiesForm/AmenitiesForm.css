@@ -1,0 +1,132 @@
+.amenities-form {
+    padding: 20px;
+    /* Internal padding for the form content */
+}
+
+.amenities-form .card-title {
+    margin: 0 0 20px 0;
+    /* Space below title */
+    font-size: 20px;
+    color: #333;
+}
+
+.amenities-form .card-title span {
+    color: #00aeef;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    /* Consistent margin-bottom for the grid */
+}
+
+/* Custom checkbox styling */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    color: #555;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.checkbox-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: #2ea3f2;
+    /* Blue when checked */
+    border-color: #2ea3f2;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Form actions for buttons */
+.amenities-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* Space above buttons */
+}
+
+.amenities-form .prev-btn {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.amenities-form .prev-btn:hover {
+    background-color: #b0b0b0;
+}
+
+.amenities-form .next-btn {
+    background-color: #8cc63f;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: capitalize;
+}
+
+.amenities-form .next-btn:hover {
+    background-color: #7ab82f;
+}
