@@ -9,6 +9,6 @@
     "install-client": "npm install --prefix client-app --legacy-peer-deps"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
