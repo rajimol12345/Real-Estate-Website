@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import axios from 'axios';
+import api from '../../services/api';
 import './CompactSearchBar.css';
 
 const CompactSearchBar = ({ onSearch, boundary }) => {
@@ -36,17 +36,14 @@ const CompactSearchBar = ({ onSearch, boundary }) => {
             return;
         }
 
-        const { token } = JSON.parse(userInfo);
         const searchName = prompt("Enter a name for this search (e.g., '3 Bed Villas in Miami'):");
         if (!searchName) return;
 
         try {
-            await axios.post('http://localhost:5005/api/saved-searches', {
+            await api.post('/saved-searches', {
                 name: searchName,
                 filters: formData,
                 boundary: boundary ? { type: 'Polygon', coordinates: [JSON.parse(boundary)] } : null
-            }, {
-                headers: { Authorization: `Bearer ${token}` }
             });
             setIsFollowing(true);
             alert("Search followed! You will receive notifications for new listings matching these criteria.");

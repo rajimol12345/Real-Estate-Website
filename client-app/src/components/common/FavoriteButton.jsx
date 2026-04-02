@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../../services/api';
 import './FavoriteButton.css';
 
 const FavoriteButton = ({ propertyId, className = '' }) => {
@@ -10,10 +10,7 @@ const FavoriteButton = ({ propertyId, className = '' }) => {
         const checkFavoriteStatus = async () => {
             if (!userInfo || !propertyId) return;
             try {
-                const { token } = JSON.parse(userInfo);
-                const res = await axios.get(`http://localhost:5005/api/favorites/status/${propertyId}`, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });
+                const res = await api.get(`/favorites/status/${propertyId}`);
                 setIsFavorite(res.data.isFavorite);
             } catch (error) {
                 console.error("Error checking favorite status:", error);
@@ -31,11 +28,7 @@ const FavoriteButton = ({ propertyId, className = '' }) => {
         }
 
         try {
-            const { token } = JSON.parse(userInfo);
-            const res = await axios.post('http://localhost:5005/api/favorites/toggle', 
-                { propertyId },
-                { headers: { Authorization: `Bearer ${token}` } }
-            );
+            const res = await api.post('/favorites/toggle', { propertyId });
             setIsFavorite(res.data.isFavorite);
         } catch (error) {
             console.error("Error toggling favorite:", error);

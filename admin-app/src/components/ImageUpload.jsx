@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { UploadCloud, X, Image as ImageIcon } from 'lucide-react';
-import { uploadService } from '../services/api';
+import { uploadService, API_BASE_URL } from '../services/api';
 import './ImageUpload.css';
 
 const ImageUpload = ({
@@ -203,7 +203,7 @@ const ImageUpload = ({
                                     <span className="pdf-name text-truncate" title={src.split('/').pop()}>{src.split('/').pop()}</span>
                                 </div>
                             ) : (
-                                <img src={src.startsWith('http') || src.startsWith('blob') ? src : `http://localhost:5005${src}`} alt={`Preview ${idx}`} />
+                                <img src={src.startsWith('http') || src.startsWith('blob') ? src : `${API_BASE_URL}${src}`} alt={`Preview ${idx}`} />
                             )}
                             <button
                                 type="button"

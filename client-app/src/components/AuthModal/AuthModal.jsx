@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../../services/api';
 import './AuthModal.css';
 
-const API_URL = 'http://localhost:5005/api/auth';
+const API_URL = `${API_BASE_URL}/api/auth`;
 
 const AuthModal = ({ isOpen, onClose, initialMode = 'login' }) => {
     const [mode, setMode] = useState(initialMode);

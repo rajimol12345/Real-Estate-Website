@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5005';
+import { API_BASE_URL } from '../services/api';
 
 export const getImageUrl = (imagePath, directory = 'property') => {
     if (!imagePath) {
@@ -7,10 +7,10 @@ export const getImageUrl = (imagePath, directory = 'property') => {
     if (imagePath.startsWith('http')) {
         return imagePath; // It's already a full URL
     }
-    // If it already has a leading slash (like /uploads/...), just prepend API_URL
+    // If it already has a leading slash (like /uploads/...), just prepend API_BASE_URL
     if (imagePath.startsWith('/')) {
-        return `${API_URL}${imagePath}`;
+        return `${API_BASE_URL}${imagePath}`;
     }
-    // Prepend API_URL and the specified directory
-    return `${API_URL}/${directory}/${imagePath}`;
+    // Prepend API_BASE_URL and the specified directory
+    return `${API_BASE_URL}/${directory}/${imagePath}`;
 };

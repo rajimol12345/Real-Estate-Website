@@ -3,9 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { LanguageContext } from '../context/LanguageContext';
 import PageCover from '../components/PageCover/PageCover';
 import ListingCard from '../components/ListingCard/ListingCard';
-import { propertyService } from '../services/api';
+import api, { propertyService } from '../services/api';
 import { getImageUrl } from '../utils/helpers';
-import axios from 'axios';
 import './Favorites.css';
 
 import pageCoverBg from '../assets/images/slider/3.jpg';
@@ -24,7 +23,7 @@ const Favorites = () => {
         }
         try {
             const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
-            const res = await axios.get('http://localhost:5005/api/favorites', config);
+            const res = await api.get('/favorites', config);
             setFavorites(res.data);
         } catch (error) {
             console.error("Error fetching favorites:", error);

@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
 import { LanguageContext } from '../context/LanguageContext';
 import PageCover from '../components/PageCover/PageCover';
 import ListingCard from '../components/ListingCard/ListingCard';
-import { propertyService, paymentService } from '../services/api';
+import api, { propertyService, paymentService } from '../services/api';
 import { getImageUrl } from '../utils/helpers';
 import './MyAccount.css';
 import pageCoverBg from '../assets/images/slider/1.jpg';
@@ -33,11 +32,9 @@ const MyAccount = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
-
                 const [favRes, searchRes, bookingRes] = await Promise.all([
-                    axios.get('http://localhost:5005/api/favorites', config),
-                    axios.get('http://localhost:5005/api/saved-searches', config),
+                    api.get('/favorites'),
+                    api.get('/saved-searches'),
                     paymentService.getMyBookings()
                 ]);
 
@@ -71,14 +68,13 @@ const MyAccount = () => {
 
         setUpdating(true);
         try {
-            const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
             console.log('Attempting profile update with token:', userInfo.token.substring(0, 10) + '...');
 
-            const { data } = await axios.put('http://localhost:5005/api/auth/profile', {
+            const { data } = await api.put('/auth/profile', {
                 name: profileData.name,
                 email: profileData.email,
                 password: profileData.password
-            }, config);
+            });
 
             // Update local storage and state
             const updatedUser = { ...userInfo, ...data };
@@ -108,8 +104,7 @@ const MyAccount = () => {
     const handleDeleteSearch = async (id) => {
         if (!window.confirm("Are you sure you want to unfollow this search?")) return;
         try {
-            const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
-            await axios.delete(`http://localhost:5005/api/saved-searches/${id}`, config);
+            await api.delete(`/saved-searches/${id}`);
             setSavedSearches(savedSearches.filter(s => s._id !== id));
         } catch (error) {
             console.error("Error deleting search:", error);
@@ -373,3 +368,4 @@ const MyAccount = () => {
 };
 
 export default MyAccount;
+t;

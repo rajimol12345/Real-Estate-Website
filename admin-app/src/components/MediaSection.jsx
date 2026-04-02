@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ImageUpload from './ImageUpload';
 import { ExternalLink, Video, FileText, Trash2, Plus, Layout } from 'lucide-react';
+import { API_BASE_URL } from '../services/api';
 import './MediaSection.css';
 
 const MediaSection = ({ formData, setFormData, isUploading, setIsUploading }) => {
@@ -223,7 +224,7 @@ const MediaSection = ({ formData, setFormData, isUploading, setIsUploading }) =>
                 {formData.media?.brochurePdf && (
                     <div className="mt-2 text-end">
                         <a
-                            href={formData.media.brochurePdf.startsWith('http') ? formData.media.brochurePdf : `http://localhost:5005${formData.media.brochurePdf}`}
+                            href={formData.media.brochurePdf.startsWith('http') ? formData.media.brochurePdf : `${API_BASE_URL}${formData.media.brochurePdf}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-sm btn-link text-primary"
