@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Root package.json for monorepo deployment",
   "scripts": {
-    "start": "npm start --prefix server",
-    "build": "npm install --prefix server",
+    "start": "node server/server.js",
+    "build": "npm install --prefix server && npm install --prefix client-app --legacy-peer-deps",
     "install-server": "npm install --prefix server",
-    "server": "npm start --prefix server"
+    "install-client": "npm install --prefix client-app --legacy-peer-deps"
   },
   "engines": {
     "node": ">=22.22.0"
