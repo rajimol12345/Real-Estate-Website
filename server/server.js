@@ -45,6 +45,11 @@ app.use(cors()); // Use cors middleware
 app.use(express.json({ limit: '10mb' })); // Increased limit for media payloads
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 
+// Root Route
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
+
 app.get('/api/debug-ping', (req, res) => res.json({ message: 'Server is alive', time: new Date() }));
 app.get('/api/payments/ping', (req, res) => res.json({ message: 'Payments route is reached' }));
 
@@ -189,4 +194,3 @@ server.on('error', (err) => {
     console.error(err);
   }
 });
-
