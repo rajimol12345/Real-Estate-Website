@@ -368,4 +368,3 @@ const MyAccount = () => {
 };
 
 export default MyAccount;
-t;
