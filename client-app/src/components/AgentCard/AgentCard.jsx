@@ -14,11 +14,11 @@ const AgentCard = ({ image, name, id }) => {
                     />
                 </Link>
                 <div className="agent-social-sidebar">
-                    <a href="#" className="social-icon toggle"><i className="fa-solid fa-plus"></i></a>
-                    <a href="#" className="social-icon"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" className="social-icon"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" className="social-icon"><i className="fa-solid fa-envelope"></i></a>
+                    <a href="#!" className="social-icon toggle"><i className="fa-solid fa-plus"></i></a>
+                    <a href="#!" className="social-icon"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="#!" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#!" className="social-icon"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="#!" className="social-icon"><i className="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div className="agent-info-footer">
@@ -26,7 +26,7 @@ const AgentCard = ({ image, name, id }) => {
                     <Link to={`/agent/${id}`}>{name}</Link>
                 </div>
                 <div className="agent-phone-box">
-                    <a href="#"><i className="fa-solid fa-phone"></i></a>
+                    <a href="#!"><i className="fa-solid fa-phone"></i></a>
                 </div>
             </div>
         </div>

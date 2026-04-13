@@ -7,11 +7,11 @@ const AgentCard = ({ agent }) => {
             <div className="agent-image-container">
                 <img src={agent.image} alt={agent.name} />
                 <div className="agent-social-bar">
-                    <a href="#"><i className="fa-solid fa-plus"></i></a>
-                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i className="fa-solid fa-envelope"></i></a>
+                    <a href="#!"><i className="fa-solid fa-plus"></i></a>
+                    <a href="#!"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="#!"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#!"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="#!"><i className="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div className="agent-footer">

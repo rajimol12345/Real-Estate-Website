@@ -41,7 +41,11 @@ console.log('**********************************************');
 console.log('   SERVER RESTARTED AT: ' + new Date().toLocaleTimeString());
 console.log('**********************************************');
 
-app.use(cors()); // Use cors middleware
+app.use(cors({
+  origin: "https://real-estate-website-2026.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json({ limit: '10mb' })); // Increased limit for media payloads
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 

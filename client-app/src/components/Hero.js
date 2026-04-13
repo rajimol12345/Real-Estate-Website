@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
@@ -100,7 +100,7 @@ const Hero = ({ onFilter }) => {
                             <span className="hero-info-address">{slides[currentSlide].address}</span>
                         </div>
                         <div className="hero-info-bar-right">
-                            <a href="#" className="hero-btn-details-fid">
+                            <a href="#!" className="hero-btn-details-fid">
                                 <i className="fa-regular fa-file-lines"></i> {t('hero.details')}
                             </a>
                             <div className="hero-price-tag-fid">{slides[currentSlide].price}</div>

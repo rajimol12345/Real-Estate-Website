@@ -1,0 +1,37 @@
+services:
+  # Client App (Static Site)
+  - type: web
+    name: real-estate-client
+    env: static
+    rootDir: client-app
+    buildCommand: npm run build
+    publishDir: build
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          name: real-estate-server
+          type: web
+          property: host
+
+  # Admin App (Static Site)
+  - type: web
+    name: real-estate-admin
+    env: static
+    rootDir: admin-app
+    buildCommand: npm run build
+    publishDir: dist
+
+  # Backend Server
+  - type: web
+    name: real-estate-server
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_VERSION
+        value: 20.20.2
